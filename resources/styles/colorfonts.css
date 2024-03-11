@@ -1,0 +1,224 @@
+/* CSS Document */
+/* Padrões de Fontes no projeto
+// Títulos: Gitan Latin ;
+// Citações: Bitter;
+// Texto: 'Arial' ;
+// Ordinal / químico: 'Calibri' ;
+*/
+
+/* TÍTULO */
+@font-face {
+    font-family: 'Gitan Latin';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/gitan_latin_regular.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gitan Latin';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/gitan_latin_medium.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gitan Latin';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/gitan_latin_bold.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gitan Latin';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/gitan_latin_extrabold.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gitan Latin';
+    font-style: italic;
+    font-weight: bold;
+    src: url(../fonts/gitan_latin_extrabold_italic.otf) format("opentype"),
+        url(../fonts/.ttf) format("truetype"),
+        url(../fonts/.woff2) format("woff2"),
+        url(../fonts/.woff) format("woff");
+    font-display: swap;
+}
+
+/* CITAÇÃO */
+@font-face {
+
+    font-family: "Bitter";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Bitter-Bold.otf) format("opentype"),
+        url(../fonts/Bitter-Bold.ttf) format("truetype"),
+        url(../fonts/Bitter-Bold.woff2) format("woff2"),
+        url(../fonts/Bitter-Bold.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bitter";
+    font-style: italic;
+    font-weight: 300;
+    src: url(../fonts/Bitter-Italic.otf) format("opentype"),
+        url(../fonts/Bitter-Italic.ttf) format("truetype"),
+        url(../fonts/Bitter-Italic.woff2) format("woff2"),
+        url(../fonts/Bitter-Italic.woff) format("woff");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Bitter";
+    font-style: normal;
+    font-weight: 200;
+    src: url(../fonts/Bitter-Regular.otf) format("opentype"),
+        url(../fonts/Bitter-Regular.ttf) format("truetype"),
+        url(../fonts/Bitter-Regular.woff2) format("woff2"),
+        url(../fonts/Bitter-Regular.woff) format("woff");
+    font-display: swap;
+}
+
+
+/* CORPO DO TEXTO */
+@font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Arial.otf) format("opentype"),
+        url(../fonts/Arial.ttf) format("truetype"),
+        url(../fonts/Arial.woff2) format("woff2"),
+        url(../fonts/Arial.woff) format("woff");
+    font-display: swap;
+}
+
+/* ORDINAL */
+@font-face {
+    font-family: 'Calibri';
+    font-style: italic;
+    font-weight: bold;
+    src: url(../fonts/calibri-bold-italic.otf) format("opentype"),
+        url(../fonts/calibri-bold-italic.ttf) format("truetype"),
+        url(../fonts/calibri-bold-italic.woff2) format("woff2"),
+        url(../fonts/calibri-bold-italic.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/calibri-bold.otf) format("opentype"),
+        url(../fonts/calibri-bold.ttf) format("truetype"),
+        url(../fonts/calibri-bold.woff2) format("woff2"),
+        url(../fonts/calibri-bold.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/calibri-italic.otf) format("opentype"),
+        url(../fonts/calibri-italic.ttf) format("truetype"),
+        url(../fonts/calibri-italic.woff2) format("woff2"),
+        url(../fonts/calibri-italic.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/calibri-regular.otf) format("opentype"),
+        url(../fonts/calibri-regular.ttf) format("truetype"),
+        url(../fonts/calibri-regular.woff2) format("woff2"),
+        url(../fonts/calibri-regular.woff) format("woff");
+    font-display: swap;
+}
+
+
+/*👉 Padrões de Projeto👈*/
+
+:root {
+    /* Fontes */
+    --titulo: 'Gitan Latin';
+    --citacao: 'Bitter';
+    --texto: 'Arial'; 
+    --ordinal: 'Calibri';
+
+    /* Arial, Helvetica, sans-serif */
+
+    /*👉--quimico: ;👈*/
+
+    /* Tamanhos */
+    --peso1: 1.8em;
+    --peso2: 1.7em;
+    --peso3: 1.6em;
+    --peso4: 1.5em;
+    --peso5: 1.4em;
+    --peso6: 1.3em;
+    --peso6: 1.2em;
+    --peso7: 0.9em;
+    --pesoPadrao: 1em;
+    --pesoMenor: 0.8em;
+    --pesoIntermediario: 0.9em;
+
+    /* Cores */
+    --corprof: #8a014c;
+    --preto: #000;
+    --branco: #fff;
+    --cinza: #ececec;
+    --link: #00649c;
+    --manualu: #E4F2E7;
+
+    --preto_: #2B2E34;
+    --verde1: #297742;
+    --verde2: #C3DB9A;
+    --verde3: #ebf3e3;
+
+    --laranja1: #DD7522;
+    --laranja2: #FBCB97;
+    --laranja3: #FEEBDC;
+
+    --vermelho1:#ac2d31 /*👉#E13F44👈*/;
+    --vermelho2: #EDAAA0;
+    --vermelho3: #fce3df;
+
+    /*-👉-amarelo1:;👈*/
+    --amarelo2: #ffe596;
+    --amarelo3:#fff2cd;
+
+    --roxo1: #70639D;
+    --roxo2: #B2A9D4;
+    --roxo3: #ddd9ed;
+
+    --azul2:#86cddb;
+    --azul3: #d5ecf4;
+
+    --amareloconceito: #fff2cd;
+
+
+
+    /* Cores degrade */
+
+}

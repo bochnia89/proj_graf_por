@@ -1,0 +1,422 @@
+@charset "UTF-8";
+@import url(reset.css);
+/* CSS Document */
+/* Documento de CSS do Gabarito */
+
+/*👉------- TÍTULO -------👈*/
+.p0tit1gab{
+    background: var(--verde1);
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-size: var(--peso4);
+    padding:0 0.6em 0.4em 0.6em;
+    width: max-content;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.p0tit1gab::before{
+    background: url(../images/pv_p0tit1gab.svg) no-repeat;
+    background-size: 100%;
+    content: '';    
+    width: 131px;
+    height: 61px;
+    position: absolute;
+    margin:-35px 0 0 -40px ;
+    z-index: -10;
+}
+.p0tit1gabnegativo{}
+
+.p0tit2gab{
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--peso6);
+}
+.p0tit2gabnegativo{}
+
+.p0tit3gab{}
+.p0tit3gabnegativo{}
+
+/*👉------- TABELA -------👈*/
+
+/*👉------- QUADRO -------👈*/ 
+
+/*👉------- GRÁFICO -------👈*/ 
+
+/*👉------- MAPAS -------👈*/ 
+
+/*👉------- SEÇÃO -------👈*/ 
+
+/*👉------- TEXTO PRINCIPAL  -------👈*/
+.p2textogabsemrecuo{}
+.p2textogabsemrecuoitem{}
+.p2textogabsemrecuoitemcont{}
+.p2textogab{}
+.p2textogabitem{}
+.p2textogabitemcont {}
+.p2textogabmarcador{}
+
+/*👉------ QUESTÃO --------------👈*/
+.p2questaogab,
+.p2questaogabcont,
+.p2questaogabitem,
+.p2questaogabitemcont,
+.p2questaogabletra,
+.p2questaogabletracont,
+.p2questaogabletraitem,
+.p2questaogabletraitemcont{
+    font-family: var(--texto);
+    text-align: justify;
+    margin: 0.5em 0;
+}
+
+
+.p2questaogab{}
+.p2questaogabcont{}
+ul.p2questaogabitem{
+    list-style: disc;
+    margin: 0 0 0 1em;
+}
+p.p2questaogabitem{
+    margin: 0 0 0 1em;
+}
+p.p2questaogabitem::before{
+    content: '•';
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 -14px ; 
+    position: absolute;
+    
+}
+.p2questaogabitemcont{
+    margin: 0 0 0 1em;
+
+}
+.p2questaogabletra{
+    margin: 0 0 0 1em;
+}
+.p2questaogabletracont{
+    margin: 0 0 0 1em;
+}
+ul.p2questaogabletraitem, p.p2questaogabletraitem{
+    list-style: disc;
+    margin: 0 0 0 2em;
+}
+p.p2questaogabletraitem::before{
+    content: '•';
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 -14px ; 
+    position: absolute;
+    
+}
+.p2questaogabletraitemcont{
+    margin: 0 0 0 2em;
+}
+
+/*👉------- ATIVIDADE DO GABARITO  -------👈*/
+.p2atvgab,
+.p2atvgabcont,
+.p2atvgabnumromano,
+.p2atvgabromano,
+.p2atvgabromano,
+.p2atvgabromano,
+.p2atvgabromanocont,
+.p2atvgabitem,
+.p2atvgabitemcont,
+.p2atvgabsubitem,
+.p2atvgabitemletra,
+.p2atvgabitemletra,
+.p2atvgabitemletra,
+.p2atvgabitemletracont {
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: justify;
+    margin: 0.5em 0;
+    
+}
+.p2atvgab{
+    margin:  0.5em 0 0.5em 1.5em;
+}
+
+.p2atvgabnumromano {
+    margin:  0.5em 0 0.5em 3.5em;
+}
+.p2atvgabnumromano>span.c0destaquenumero{
+  
+    font-weight: bold;
+    margin: 0 0 0 -56px;
+   
+}
+.p2atvgabnumromano>span.c0destaqueromano{
+ 
+    font-weight: 400;
+    margin: 0 0 0 -40px;
+}
+.p2atvgabromano{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+.p2atvgabromano>span.c0destaqueromano{
+    font-weight: 400;
+}
+.p2atvgabromanocont{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+
+
+
+.p2atvgab{
+    margin: 1em 0 0em 1.5em;
+    max-width: 100%;
+}
+.p2atvgabcont{
+    margin: 0em 0 0em 1.5em;
+    max-width: 100%;
+}
+
+ul.p2atvgabitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p2atvgabitem{
+    margin: 0.5em 0 0.5em 1em;
+}
+p.p2atvgabitem::before{
+    content: '•';
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin:  0  0 0 -14px;
+
+}
+.p2atvgabitemcont{
+    margin: 0.5em 0 0.5em 1em;
+}
+ul.p2atvgabsubitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 2em;
+}
+p.p2atvgabsubitem::before{
+    content: '•';
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin:  0  0 0 -14px;
+}
+p.p2atvgabsubitem{
+    margin: 0.5em 0 0.5em 2em;
+}
+.p2atvgabitemletra{}
+.p2atvgabitemletracont{}
+
+
+
+.p2atvgabitemletra{
+    margin: 0.5em 0 0.5em 2.5em ;
+}
+
+.p2atvgabitemletra > span.c0destaqueletra{
+    font-weight: 400;
+}
+.p2atvgabitemletracont{
+    margin: 0.5em 0 0.5em 2.5em ;
+}
+
+/* Atividade Gab Letra */
+.p2atvgabletra,
+.p2atvgabletracont,
+.p2atvgabletraitembullet,
+.p2atvgabletraitembulletcont,
+.p2atvgabletraromano,
+.p2atvgabletraromano,
+.p2atvgabletraromanocont{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: justify;
+    margin: 0.5em 0;
+    max-width: 100%;
+}
+
+.p2atvgabletra{
+    margin: 0.5em 0 0.5em 2.5em;
+    max-width: 100%;
+}
+.p2atvgabletracont{
+    margin: 0.5em 0 0.5em 2.5em;
+    max-width: 100%;
+}
+ul.p2atvgabletraitembullet,
+p.p2atvgabletraitembullet{
+    list-style: disc;
+    margin:  0.5em 0 0.5em 3.5em; 
+}
+p.p2atvgabletraitembullet::before{
+    content: '•';
+    width: 10px;
+    height: 40px;
+    margin: 0 0 0 -14px;
+    font-size: 1.3em;
+    position: absolute;
+}
+.p2atvgabletraitembulletcont{
+    margin:  0.5em 0 0.5em 3.5em; 
+}
+.p2atvgabletraromano{
+    margin:  0.5em 0 0.5em 4.5em; 
+}
+.p2atvgabletraromano>.c0destaqueromano{
+    font-weight: 400;
+}
+.p2atvgabletraromanocont{
+    margin:  0.5em 0 0.5em 4.5em; 
+}
+
+/* Atividade Gab Num */
+.p2atvgabnumitem,
+.p2atvgabnumletra{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    text-align: justify;
+    margin: 0.5em 0;
+    max-width: 100%;
+}
+
+.p2atvgabnumitem{
+    margin: 0.5em 0 0.5em 2.5em;
+}
+.p2atvgabnumitem>.c0destaquenumero{
+    margin:0 0 0 -35px; ;
+}
+.p2atvgabnumitem>.c0bulletnumitem{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -12px;
+}
+.p2atvgabnumletra{ 
+    margin: 1em 0 0em 3em;
+    max-width: 100%;
+}
+.p2atvgabnumletra>.c0destaquenumero{
+    margin: 0 0 0 -46px;
+}
+.p2atvgabnumletra>.c0destaqueletra{
+    margin: 0 0 0 -25px;
+    font-weight: 400;
+}
+.p2atvgabnumletra {}
+
+.p2atvgabnumletraitem{
+    margin: 1em 0 0em 3.5em;
+}
+.p2atvgabnumletraitem>.c0destaquenumero{
+    margin: 0 0 0 -56px;
+}
+.p2atvgabnumletraitem>.c0destaqueletra{
+    margin: 0 0 0 -36px;
+    font-weight: 400;
+}
+.p2atvgabnumletraitem>.c0bulletnumitem{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -10px;
+}
+
+
+.p2atvgabletraitem{
+    margin: 1em 0 0em 3.5em
+}
+.p2atvgabletraitem>.c0destaqueletra{
+    margin: 0 0 0 -36px;
+    font-weight: 400;
+}
+.p2atvgabletraitem>.c0bulletnumitem{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -10px;
+}
+.p2atvgabnumromano{}
+.p2atvgabsomatoria{}
+.p2atvgabsomatoriacont{}
+
+
+
+
+/* SOMATORIA */
+.p2atvgabsomatoria{
+    margin: 0.5em 0 0.5em 3.5em;
+    text-align: left;
+}
+.p2atvgabsomatoria>.c0destaquesomatoria{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    margin: 0 0 0 -30px;
+}
+
+.p2atvgabsomatoriacont {
+    margin: 0.5em 0 0.5em 3.5em;
+}
+
+/*👉------- TEXTO INTERMEDIÁRIO  -------👈*/
+.p3intermediariogabtit,
+.p3intermediariogab,
+.p3intermediariogabitem,
+.p3intermediariogabitemcont,
+.p3intermediariogabsemrecuo,
+.p3intermediariogabsemrecuoitem,
+.p3intermediariogabsemrecuoitemcont{
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);
+    margin: 0.5em 0 0.5em 0;
+}
+
+.p3intermediariogabtit{
+    font-family: var(--titulo);
+    font-size: var(--peso6);
+    font-weight: bold;
+}
+.p3intermediariogab{}
+.p3intermediariogabitem{}
+.p3intermediariogabitemcont{}
+.p3intermediariogabsemrecuo{}
+ul.p3intermediariogabsemrecuoitem{
+    list-style: disc;
+    margin: 0.5em 0.5em 0;
+}
+p.p3intermediariogabsemrecuoitem{
+    margin: 0.5em 0 0.5em 0.5em;
+}
+p.p3intermediariogabsemrecuoitem::before{
+    content: '•';
+    font-size: 1.3em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+.p3intermediariogabsemrecuoitemcont{
+    margin: 0.5em 0 0.5em 0.5em;
+}
+
+/*👉------- LEGENDA -------👈*/ 
+
+/*👉------- CRÉDITO GERAL -------👈*/
+
+/*👉------- CRÉDITO IMAGEM  -------👈*/
+
+/*👉------- COTAS  -------👈*/
+
+/*👉------- RECADO IMAGEM E MEDIDA ANIMAL -------👈*/
+
+/*👉------- MARCADORES -------👈*/
+
+
+/*👉------- ESTILOS DE CARACTER -------👈*/
+

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.422" height="5.662" viewBox="0 0 38.422 5.662">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_1355" data-name="Caminho 1355" d="M0,0H38.422V-5.662H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_quadrobranco" transform="translate(0 5.662)">
+    <g id="Grupo_1405" data-name="Grupo 1405" clip-path="url(#clip-path)">
+      <g id="Grupo_1403" data-name="Grupo 1403" transform="translate(38.422 -2.831)">
+        <path id="Caminho_1353" data-name="Caminho 1353" d="M0,0A2.633,2.633,0,0,0-2.633-2.633H-22.981A2.633,2.633,0,0,0-25.615,0a2.633,2.633,0,0,0,2.634,2.633H-2.633A2.633,2.633,0,0,0,0,0" fill="#2b2e34"/>
+      </g>
+      <g id="Grupo_1404" data-name="Grupo 1404" transform="translate(0.001 -2.831)">
+        <path id="Caminho_1354" data-name="Caminho 1354" d="M0,0A2.831,2.831,0,0,1,2.831-2.831H25.615V2.831H2.831A2.831,2.831,0,0,1,0,0" fill="#9fa6d5"/>
+      </g>
+    </g>
+  </g>
+</svg>

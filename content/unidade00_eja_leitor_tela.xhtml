@@ -1,0 +1,2036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="pt-BR" xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leitor de tela - testes</title>
+    <!--script vai trocar automaticamente-->
+    <link href="resources/images/favicon.jpg" rel="icon" type="image/x-icon" />
+    <meta content="noindex, nofollow" name="robots" />
+    <!-- Metadados -->
+    <meta content="key_metadata_dc:description" name="description" />
+    <!--script vai trocar automaticamente-->
+    <meta content="key_metadata_dc:creator" name="author" />
+    <!--script vai trocar automaticamente-->
+    <meta content="pt-br" name="language" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Scripts JS -->
+    <!-- Link CSS -->
+    <link
+      href="../resources/styles/styles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body lang="pt-BR" xml:lang="pt-BR">
+    <div itemscope="" itemtype="https://schema.org/Book">
+      <meta
+        content="Esta publicação está em conformidade com a especificação de acessibilidade em WCAG 2.0 Level AA"
+        itemprop="accessibilitySummary"
+        lang="pt-BR"
+        xml:lang="pt-BR"
+      />
+      <meta content="textual" itemprop="accessMode" />
+      <meta content="visual" itemprop="accessMode" />
+      <meta content="textual" itemprop="accessModeSufficient" />
+      <meta content="largePrint/CSSEnabled" itemprop="accessibilityFeature" />
+      <!--item novo-->
+      <meta content="highContrast/CSSEnabled" itemprop="accessibilityFeature" />
+      <meta content="resizeText/CSSEnabled" itemprop="accessibilityFeature" />
+      <meta content="displayTransformability" itemprop="accessibilityFeature" />
+      <meta content="longDescription" itemprop="accessibilityFeature" />
+      <meta content="alternativeText" itemprop="accessibilityFeature" />
+      <meta content="fullKeyboardControl" itemprop="accessibilityControl" />
+      <!-- Verificar se há ocorrências -->
+      <meta content="noFlashingHazard" itemprop="accessibilityHazard" />
+      <meta content="noSoundHazard" itemprop="accessibilityHazard" />
+      <meta content="MathML" itemprop="accessibilityFeature" />
+      <meta content="describedMath" itemprop="accessibilityFeature" />
+      <meta content="key_metadata_dc:title" itemprop="nam" />
+      <!--script vai trocar automaticamente-->
+      <meta content="key_metadata_dc:description" itemprop="description" />
+      <!--script vai trocar automaticamente-->
+      <meta content="key_metadata_unique-identifier" itemprop="isbn" />
+      <!--script vai trocar automaticamente-->
+      <meta content="key_metadata_copyrightYear" itemprop="copyrightYear" />
+      <!--script vai trocar automaticamente-->
+      <meta
+        content="key_metadata_dc:publisher"
+        itemprop="publisher"
+        itemscope=""
+        itemtype="https://schema.org/Organization"
+      />
+      <!--script vai trocar automaticamente-->
+    </div>
+    <main>
+    
+      <!-- ******************** PÁGINA 000 ***************************-->
+      <section class="pag000" aria-label="Página 0">
+        <header>
+          <p class="pag" role="doc-pagebreak"><span aria-hidden="true">Página 0</span></p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h1>Testes com leitores de tela realizados em novembro de 2023</h1>
+          <p>Sintetizadores utlizados:</p>
+          <ul>
+            <li>NVDA - eSpeak NG - voz portuguese Brazil variante Pablo</li>
+            <li>NVDA - Windows OneCore - voz Microsft Daniel</li>
+            <li>Voice Over - Luciana</li>
+          </ul>
+          <!-- Título de instrução -->
+          <h2 class="instrucao">
+            Teste de paginação | aria-label na section + span com
+            aria-hidden<code></code>
+          </h2>
+
+          <!-- Exemplo de modelo de código (lembrar de trocar a entidade)  -->
+          <details>
+            <summary class="summary">Ver código:</summary>
+            <pre class="codigoExemplo">
+            <code>
+              &#x3C;section class=&#x22;pag000&#x22; aria-label=&#x22;P&#xE1;gina 0&#x22;&#x3E;
+          &#x3C;header&#x3E;
+            &#x3C;p class=&#x22;pag&#x22; role=&#x22;doc-pagebreak&#x22;&#x3E;
+              &#x3C;span aria-hidden=&#x22;true&#x22;&#x3E;P&#xE1;gina 0&#x3C;/span&#x3E;
+            &#x3C;/p&#x3E;
+            </code>
+          </pre>
+          </details>
+          <!-- Exemplo de modelo de código   -->
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            Não ocorre a leitura da paginação
+          </blockquote>
+
+          <!-- Leitura do NVDA -->
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            página 0 região separador
+          </blockquote>
+          <!-- Leitura do NVDA  -->
+
+          <p class="leitura">Leitura no Voice Over + Safari</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            página 0 região horizontal divisor
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            página 0 região horizontal quebra de página
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Firefox</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            página 0 horizontal separador
+          </blockquote>
+
+          <!-- Comentário do exemplo -->
+          <p class="comentarioCode">
+            Mover o aria-label da paginação para a section e adicionar span
+            com aria-hidden true no parágrafo de paginação. Desse modo, não
+            ocorerrá leitura duplicada da paginação nos navegadores Edge e
+            Chrome.
+            <mark>
+              Porém, há um problema nesse modo, pois nesse caso, ao navegar
+              com o NVDA "para trás", não ocorre a leitura da paginação</mark
+            >, visto que ela está atrelada a section, e não ao parágrafo de
+            paginação.
+          </p>
+          <!-- Comentário do exemplo  -->
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página">
+        <header>
+          <p class="pag" role="doc-pagebreak">Página 1</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao" id="aria_paginacao">
+            Teste de paginação | somente role="doc-pagebreak":
+          </h2>
+
+          <details>
+            <summary class="summary">Ver código:</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;section class=&#x22;pag000&#x22; aria-label=&#x22;P&#xE1;gina&#x22;&#x3E;
+                &#x3C;header&#x3E;
+                  
+        
+                  &#x3C;p class=&#x22;pag&#x22; role=&#x22;doc-pagebreak&#x22;&#x3E;
+                    P&#xE1;gina 1
+                  &#x3C;/p&#x3E;
+                &#x3C;/header&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              Página 1
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Firefox</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            Página região separador
+          </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Opera</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            Página região separador Página 1
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            página região horizontal quebra de página página 1
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Firefox</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            Página região horizontal separador
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Safari</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            Página região horizontal divisor
+          </blockquote>
+
+          <p class="comentarioCode">
+            Somente role="doc-pagebreak" funciona corretamente em: Windows
+            (NVDA) navegadores Chrome, Edge, Opera e Thorium.
+            <mark
+              >Não ocorre a leitura de paginação no Firefox (NVDA e Voice Over)
+              e no Safari (Voice Over)</mark
+            >.
+          </p>
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+        class="box_professor_mp"
+        aria-labelledby="orientanav0"
+      >
+        <h2 class="orienta" id="orientanav0">
+          <span>ORIENTAÇÕES AO PROFESSOR</span>
+        </h2>
+        <p class="orientaTx">
+          Não há orientações específicas para esta página.
+        </p>
+
+        <h3 class="instrucao">
+          Teste de aside no aria-labelledby manual em U
+        </h3>
+        <details>
+          <summary class="summary">Ver código</summary>
+          <pre class="codigoExemplo">
+            <code>
+              &#x3C;aside
+        class=&#x22;box_professor_mp&#x22;
+        aria-labelledby=&#x22;orientanav0&#x22;
+      &#x3E;
+        &#x3C;h2 class=&#x22;orienta&#x22; id=&#x22;orientanav0&#x22;&#x3E;
+          &#x3C;span&#x3E;ORIENTA&#xC7;&#xD5;ES AO PROFESSOR&#x3C;/span&#x3E;
+        &#x3C;/h2&#x3E;
+        &#x3C;p class=&#x22;orientaTx&#x22;&#x3E;
+          N&#xE3;o h&#xE1; orienta&#xE7;&#xF5;es espec&#xED;ficas para esta p&#xE1;gina.
+        &#x3C;/p&#x3E;
+            </code>
+          </pre>
+        </details>
+
+        <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>Orientações ao professor</p>
+            </blockquote>
+
+        <p class="leitura">Leitura no NVDA + Chrome/Edege/Firefox/Opera</p>
+        <blockquote class="leiturablock" role="doc-pullquote">
+          <p>ORIENTAÇÕES AO PROFESSOR  complementar marco</p>
+          <p>título    nível 2 ORIENTAÇÕES AO PROFESSOR</p>
+          <p>Não há orientações específicas para esta página.</p> 
+
+        </blockquote>
+
+        <p class="leitura">Leitura no Voice Over + Chrome//Firefox/Safari</p>
+        <blockquote class="leiturablock" role="doc-pullquote">
+          <p>Orientações ao professor complementar</p>
+          <p>nível de título 2 Orientações ao professor</p>
+          <p>não há orientaçoes específicas para esta página.</p> 
+
+        </blockquote>
+
+        <p class="comentarioCode">
+          Tanto no Voice Over quanto no NVDA ocorre a <mark>leitura duplicada de "Orientações ao professor."</mark>
+        </p>
+      </aside>
+
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+
+          <h3 class="instrucao">
+            Teste de aria-label no aside manual em U
+          </h3>
+          <details>
+            <summary class="summary aplicar">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;aside class=&#x22;box_professor_mp&#x22; aria-label=&#x22;Orienta&#xE7;&#xF5;es espec&#xED;ficas da p&#xE1;gina&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;orienta&#x22; id=&#x22;orientanav0&#x22;&#x3E;
+                  &#x3C;span&#x3E;ORIENTA&#xC7;&#xD5;ES AO PROFESSOR&#x3C;/span&#x3E;
+                &#x3C;/h2&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>Orientações específicas da página  complementar marco </p>   <p>título    nível 2  ORIENTAÇÕES AO PROFESSOR</p>
+            <p>Não há orientações específicas para esta página.</p> 
+          </blockquote>
+          
+          <p class="leitura">Leitura no Voice Over + Chrome/Firefox/Safari</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>Orientações específicas da página complementar</p>
+            <p>nível de título 2 Orientações ao professor</p>
+            <p>Não há orientações específicas para esta página.</p>
+          </blockquote>
+
+          <p class="comentarioCode">
+            Retirar aria-labelledby do aside e trocar por aria-label com o
+            texto "Orientações específicas da página", para que assim não haja
+            leitura duplicada pelo leitor de tela.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000">
+        <header>
+          <p class="pag" role="doc-pagebreak" aria-label="Página 1">Página 1</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">
+            Teste de paginação | role="doc-pagebreak" + aria-label:
+          </h2>
+         
+          <details>
+            <summary class="summary aplicar">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;p class=&#x22;pag&#x22; role=&#x22;doc-pagebreak&#x22; aria-label=&#x22;P&#xE1;gina 1&#x22;&#x3E;P&#xE1;gina 1&#x3C;/p&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>Página 1</p>
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Opera</p>
+        <blockquote class="leiturablock" role="doc-pullquote">
+          <p>Página 1  separador    Página 1
+          </p>
+        </blockquote>
+          
+          <p class="leitura">Leitura no NVDA + Firefox</p>
+        <blockquote class="leiturablock" role="doc-pullquote">
+          <p>Página 1 separador</p>
+        </blockquote>
+
+        
+
+          <p class="leitura">Leitura no Voice Over + Safari</p>
+        <blockquote class="leiturablock" role="doc-pullquote">
+          <p>horizontal divisor</p>
+        </blockquote>
+
+        <p class="leitura">Leitura no Voice Over + Chrome</p>
+        <blockquote class="leiturablock" role="doc-pullquote">
+          <p>horizontal quebra de página</p>
+          <p>página 1</p>
+        </blockquote>
+
+        <p class="leitura">Leitura no Voice Over + Firefox</p>
+        <blockquote class="leiturablock" role="doc-pullquote">
+          <p>horizontal separador</p>
+          <p>página 1</p>
+        </blockquote>
+
+          <p class="comentarioCode">
+            Só funciona corretamente no
+              Firefox e Thorium, ocorrendo a leitura duplicada da paginação no Edge, Chrome e Opera. Já no Safari (Voice Over
+              - MAC) não ocorre a leitura da paginação.
+          </p>
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página">
+        <header>
+          <p class="pag" role="doc-pagebreak">Página 2</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">
+            Teste de tabela com duas linhas de título
+          </h2>
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;table class=&#x22;tabela_simples&#x22;&#x3E;
+            &#x3C;caption&#x3E;
+              T&#xED;tulo da tabela
+            &#x3C;/caption&#x3E;
+
+            &#x3C;thead&#x3E;
+              &#x3C;tr&#x3E;
+                &#x3C;th&#x3E;Grupo A&#x3C;/th&#x3E;
+                &#x3C;th colspan=&#x22;2&#x22;&#x3E;Grupo B&#x3C;/th&#x3E;
+              &#x3C;/tr&#x3E;
+              &#x3C;tr&#x3E;
+                &#x3C;th&#x3E;item X&#x3C;/th&#x3E;
+                &#x3C;th&#x3E;item Y&#x3C;/th&#x3E;
+                &#x3C;th&#x3E;item Z&#x3C;/th&#x3E;
+              &#x3C;/tr&#x3E;
+            &#x3C;/thead&#x3E;
+            &#x3C;tbody&#x3E;
+              &#x3C;tr&#x3E;
+                &#x3C;td&#x3E;objeto A&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto B&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto C&#x3C;/td&#x3E;
+              &#x3C;/tr&#x3E;
+              &#x3C;tr&#x3E;
+                &#x3C;td&#x3E;objeto C&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto D&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto E&#x3C;/td&#x3E;
+              &#x3C;/tr&#x3E;
+              &#x3C;tr&#x3E;
+                &#x3C;td&#x3E;objeto F&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto G&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto H&#x3C;/td&#x3E;
+              &#x3C;/tr&#x3E;
+              &#x3C;tr&#x3E;
+                &#x3C;td&#x3E;objeto I&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto J&#x3C;/td&#x3E;
+                &#x3C;td&#x3E;objeto K&#x3C;/td&#x3E;
+              &#x3C;/tr&#x3E;
+            &#x3C;/tbody&#x3E;
+          &#x3C;/table&#x3E;
+              </code>
+            </pre>
+          </details>
+         
+          
+          <table class="tabela_simples">
+            <caption>
+              Título da tabela
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Grupo A</th>
+                <th colspan="2">Grupo B</th>
+              </tr>
+              <tr>
+                <th>item X</th>
+                <th>item Y</th>
+                <th>item Z</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>objeto A</td>
+                <td>objeto B</td>
+                <td>objeto C</td>
+              </tr>
+              <tr>
+                <td>objeto C</td>
+                <td>objeto D</td>
+                <td>objeto E</td>
+              </tr>
+              <tr>
+                <td>objeto F</td>
+                <td>objeto G</td>
+                <td>objeto H</td>
+              </tr>
+              <tr>
+                <td>objeto I</td>
+                <td>objeto J</td>
+                <td>objeto K</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="leitura">Leitura no NVDA + Firefox</p>
+          <blockquote class="leiturablock">
+           <p> tabela  com 6 linhas e 3 colunas  legenda    Título da tabela</p>
+linha 1  Grupo A
+<p>item X  coluna 1  Grupo A</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  até 3  Grupo B</p>
+<p>linha 2  Grupo A</p>
+<p>item X  coluna 1  item X</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  item Y</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  item Z</p>
+<p>linha 3  Grupo A</p>
+<p>item X  coluna 1  objeto A</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto B</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto C</p>
+<p>linha 4  Grupo A</p>
+<p>item X  coluna 1  objeto C</p>
+
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto D</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto E</p>
+<p>linha 5  Grupo A</p>
+<p>item X  coluna 1  objeto F</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto G</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto H</p>
+<p>linha 6  Grupo A</p>
+<p>item X  coluna 1  objeto I</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto J</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto K  fora de tabela</p>
+
+          </blockquote>
+          
+          <p class="comentarioCode">
+            Ocorre duas vezes a leitura do caption.
+          </p>
+
+          <h2 class="instrucao">
+            Teste de tabela com duas linhas de título e adição de colgroup e
+            scope
+          </h2>
+
+          <details>
+            <summary class="summary">Ver código:</summary>
+              <pre class="codigoExemplo">
+                <code>
+
+                </code>
+              </pre>
+          </details>
+          <table class="tabela_simples">
+            <caption>
+              Título da tabela
+            </caption>
+            <colgroup>
+              <col span="1" style="background-color: rgb(195, 134, 223)" />
+              <col span="2" style="background-color: yellow" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="colgroup">Grupo A</th>
+                <th colspan="2" scope="colgroup">Grupo B</th>
+              </tr>
+              <tr>
+                <th scope="col">item X</th>
+                <th scope="col">item Y</th>
+                <th scope="col">item Z</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>objeto A</td>
+                <td>objeto B</td>
+                <td>objeto C</td>
+              </tr>
+              <tr>
+                <td>objeto C</td>
+                <td>objeto D</td>
+                <td>objeto E</td>
+              </tr>
+              <tr>
+                <td>objeto F</td>
+                <td>objeto G</td>
+                <td>objeto H</td>
+              </tr>
+              <tr>
+                <td>objeto I</td>
+                <td>objeto J</td>
+                <td>objeto K</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="leitura">Leitura no NVDA + Firefox</p>
+          <blockquote class="leiturablock">
+<p>tabela  com 6 linhas e 3 colunas  legenda    Título da tabela</p>
+<p>linha 1  Grupo A</p>
+<p>item X  coluna 1  Grupo A</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  até 3  Grupo B</p>
+<p>linha 2  Grupo A</p>
+<p>item X  coluna 1  item X</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  item Y</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  item Z</p>
+<p>linha 3  Grupo A</p>
+<p>item X  coluna 1  objeto A</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto B</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto C</p>
+<p>linha 4  Grupo A</p>
+<p>item X  coluna 1  objeto C</p>
+
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto D</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto E</p>
+<p>linha 5  Grupo A</p>
+<p>item X  coluna 1  objeto F</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto G</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto H</p>
+<p>linha 6  Grupo A</p>
+<p>item X  coluna 1  objeto I</p>
+<p>Grupo B</p>
+<p>item Y  coluna 2  objeto J</p>
+<p>Grupo B</p>
+<p>item Z  coluna 3  objeto K  fora de tabela</p>
+
+          </blockquote>
+
+          <p class="comentarioCode">
+            Ocorre duas vezes a leitura do caption. Aparentemente não há diferença na leitura em relação a tabela sem colgroup e sem scope, no entanto, como houve diligência no 24 relacionada a adição de scope, <mark>talvez seja interessante manter a adição de scope posteriormente como alternativa para "correção" de falha pontual</mark>.
+          </p>
+         
+          <table class="tabela_simples">
+            <caption>
+              Teste de leitura de tabela com células mescladas
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Primero título</th>
+                <th scope="col">Segundo título</th>
+                <th scope="col">Terceiro título</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Informação x</td>
+                <td rowspan="3">Informação Y</td>
+                <td rowspan="3">Informação z</td>
+              </tr>
+              <tr>
+                <td>Outra informação</td>
+              </tr>
+              <tr>
+                <td>Outra informação</td>
+              </tr>
+            </tbody>
+          </table>
+
+          
+
+          <table class="tabela_simples" lang="en">
+            <caption>
+              Delivery slots:
+            </caption>
+            <thead>
+              <tr>
+                <th>Time / Day of the week</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">09:00 - 11:00</th>
+                <td>Closed</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th scope="row">11:00 - 13:00</th>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th scope="row">13:00 - 15:00</th>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Open</td>
+                <td>Closed</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th scope="row">15:00 - 17:00</th>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Closed</td>
+                <td>Open</td>
+                <td>Open</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página">
+        <header>
+          <p class="pag" role="doc-pagebreak">
+            <span aria-label="Página 3">Página 3</span>
+          </p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">
+            Teste de números romanos | span com aria-label
+          </h2>
+
+          <div>
+            <p class="atvLetra">
+              <span class="letra">a) </span>
+              <span
+                aria-label="X L I I I"
+                class="ajustepronuncia"
+                id="aj_pro_id_g085338462574pt"
+                >XLIII</span
+              >
+            </p>
+            <p class="atvLetra">
+              <span class="letra">b) </span>
+              <span
+                aria-label="L X V I I"
+                class="ajustepronuncia"
+                id="aj_pro_id_u085338462574pe"
+                >LXVII</span
+              >
+            </p>
+            <p class="atvLetra">
+              <span class="letra">c) </span>
+              <span
+                aria-label="C D L X X X I"
+                class="ajustepronuncia"
+                id="aj_pro_id_t085338463572ht"
+                >CDLXXXI</span
+              >
+            </p>
+            <p class="atvLetra">
+              <span class="letra">d) </span>
+              <span
+                aria-label="D V I"
+                class="ajustepronuncia"
+                id="aj_pro_id_w085338463870xu"
+                >DVI</span
+              >
+            </p>
+            <p class="atvLetra">
+              <span class="letra">e) </span>
+              <span
+                aria-label="C M X I X"
+                class="ajustepronuncia"
+                id="aj_pro_id_k085338463870ug"
+                >CMXIX</span
+              >
+            </p>
+            <p class="atvLetra">
+              <span class="letra">f) </span>
+              <span
+                aria-label="M D C L"
+                class="ajustepronuncia"
+                id="aj_pro_id_d085338463870wt"
+                >MDCL</span
+              >
+            </p>
+            <p class="atvLetra">
+              <span class="letra">g) </span>
+              <span
+                aria-label="M M X L"
+                class="ajustepronuncia"
+                id="aj_pro_id_c085338463870ka"
+                >MMXL</span
+              >
+            </p>
+            <p class="atvLetra">
+              <span class="letra">h) </span>
+              <span
+                aria-label="M M M C D X L I V"
+                class="ajustepronuncia"
+                id="aj_pro_id_n085338463870ds"
+                >MMMCDXLIV</span
+              >
+            </p>
+
+            <p class="corprof">
+              Respostas: a)
+              <span
+                aria-label="L X I"
+                class="ajustepronuncia"
+                id="aj_pro_id_m085338464870ff"
+                >LXI</span
+              >; b)
+              <span
+                aria-label="C C C I I"
+                class="ajustepronuncia"
+                id="aj_pro_id_s085338465867io"
+                >CCCII</span
+              >; c)
+              <span
+                aria-label="M C C X X X V I"
+                class="ajustepronuncia"
+                id="aj_pro_id_g085338465867pt"
+                >MCCXXXVI</span
+              >; d)
+              <span
+                aria-label="M M I"
+                class="ajustepronuncia"
+                id="aj_pro_id_h085338465867cm"
+                >MMI</span
+              >.
+            </p>
+          </div>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>a XLIII</p>
+
+<p>b LXVII</p>
+
+<p>c CDLXXXI</p>
+
+<p>d DVI</p>
+
+<p>e CMXIX</p>
+
+<p>f MDCL</p>
+
+<p>g MMXL</p>
+
+<p>h MMMCDXLIV</p>
+
+<p>Respostas a LXI b CCCII; c MCCXXXVI d MMI</p>
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>a 43</p>
+            <p>b 67</p>
+            <p>c 481</p>
+            <p>d 506</p>
+            <p>e 919</p>
+            <p>f 1650</p>
+            <p>g MMXL</p>
+            <p>h MMMCDXLIV</p>
+            <p>Respostas a 61 b 302 c 1236 d MMI.</p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome/Firefox/Safari</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>a XLIII grupo XLIII</p>
+            <p>b LXVII grupo LXVII</p>
+            <p>c CDLXXXI grupo CDLXXXI</p>
+            <p>d DVI grupo DVI</p>
+            <p>e CMXIX grupo CMXIX</p>
+            <p>f MDCL grupo MDCL</p>
+            <p>g MMXL grpo MMXL</p>
+            <p>h MMMCDXLIV grupo MMMCDXLIV</p>
+            <p>
+              Respostas: a LXI grupo LXI b CCCII grupo CCCII c MCCXXXVI grupo
+              MCCXXXVI d MMI grupo MMI.
+            </p>
+          </blockquote>
+
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;a) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;X L I I I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_g085338462574pt&#x22;
+                  &#x3E;XLIII&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+              &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;b) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;L X V I I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_u085338462574pe&#x22;
+                  &#x3E;LXVII&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+              &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;c) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;C D L X X X I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_t085338463572ht&#x22;
+                  &#x3E;CDLXXXI&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+              &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;d) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;D V I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_w085338463870xu&#x22;
+                  &#x3E;DVI&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+              &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;e) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;C M X I X&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_k085338463870ug&#x22;
+                  &#x3E;CMXIX&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+              &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;f) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;M D C L&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_d085338463870wt&#x22;
+                  &#x3E;MDCL&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+              &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;g) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;M M X L&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_c085338463870ka&#x22;
+                  &#x3E;MMXL&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+              &#x3C;p class=&#x22;atvLetra&#x22;&#x3E;
+                &#x3C;span class=&#x22;letra&#x22;&#x3E;h) &#x3C;/span&#x3E;
+                &#x3C;span
+                  aria-label=&#x22;M M M C D X L I V&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_n085338463870ds&#x22;
+                  &#x3E;MMMCDXLIV&#x3C;/span
+                &#x3E;
+              &#x3C;/p&#x3E;
+    
+              &#x3C;p class=&#x22;corprof&#x22;&#x3E;
+                Respostas: a)
+                &#x3C;span
+                  aria-label=&#x22;L X I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_m085338464870ff&#x22;
+                  &#x3E;LXI&#x3C;/span
+                &#x3E;; b)
+                &#x3C;span
+                  aria-label=&#x22;C C C I I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_s085338465867io&#x22;
+                  &#x3E;CCCII&#x3C;/span
+                &#x3E;; c)
+                &#x3C;span
+                  aria-label=&#x22;M C C X X X V I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_g085338465867pt&#x22;
+                  &#x3E;MCCXXXVI&#x3C;/span
+                &#x3E;; d)
+                &#x3C;span
+                  aria-label=&#x22;M M I&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_h085338465867cm&#x22;
+                  &#x3E;MMI&#x3C;/span
+                &#x3E;.
+              &#x3C;/p&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="comentarioCode">
+            No Thorium a leitura parece desconsiderar o aria-labe aplicado. Em alguns casos, utilizando o NVDA, ocorre a leitura correta dos
+            números romanos, mesmo havendo um aria-label no qual o número é
+            escrito como letras com espaços entre si. Já no Voice Over é feita
+            primeiro a leitura do aria-label, seguida pela enunciação do termo
+            "grupo" e posteriormente a leitura dos caracteres que compõem o
+            número romano.
+          </p>
+
+          <p class="atvLetra">
+            <span class="letra">a) </span> Utilizando símbolos da numeração
+            romana, escreva em seu caderno o ano de nascimento e o de morte de
+            Maryam e o ano em que ela ganhou a Medalha Fields.
+          </p>
+          <p class="corprof">
+            Respostas: (<span
+              aria-label="M C M L X X V I I"
+              class="ajustepronuncia"
+              id="aj_pro_id_q085338465867mt"
+              >MCMLXXVII</span
+            >-<span
+              aria-label="M M X V I I"
+              class="ajustepronuncia"
+              id="aj_pro_id_m085338466864rc"
+              >MMXVII</span
+            >);
+            <span
+              aria-label="M M X I V"
+              class="ajustepronuncia"
+              id="aj_pro_id_g085338466864ar"
+              >MMXIV</span
+            >.
+          </p>
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+                <code>
+                  &#x3C;p class=&#x22;corprof&#x22;&#x3E;
+                  Respostas: (&#x3C;span
+                    aria-label=&#x22;M C M L X X V I I&#x22;
+                    class=&#x22;ajustepronuncia&#x22;
+                    id=&#x22;aj_pro_id_q085338465867mt&#x22;
+                    &#x3E;MCMLXXVII&#x3C;/span
+                  &#x3E;-&#x3C;span
+                    aria-label=&#x22;M M X V I I&#x22;
+                    class=&#x22;ajustepronuncia&#x22;
+                    id=&#x22;aj_pro_id_m085338466864rc&#x22;
+                    &#x3E;MMXVII&#x3C;/span
+                  &#x3E;);
+                  &#x3C;span
+                    aria-label=&#x22;M M X I V&#x22;
+                    class=&#x22;ajustepronuncia&#x22;
+                    id=&#x22;aj_pro_id_g085338466864ar&#x22;
+                    &#x3E;MMXIV&#x3C;/span
+                  &#x3E;.
+                &#x3C;/p&#x3E;
+                </code>
+              </pre>
+          </details>
+          <p class="comentarioCode">
+            Em alguns casos, a leitura dos números romanos pelo NVDA de forma
+              "correta" pode ser um problema, visto que a atividade pode ter
+              como objetivo que se realize a escrita do número romano, como na
+              atividade anterior. Ainda assim, é importa lembrar que não é possível controlar a forma pela qual o leitor de tela interpretará o conteúdo.
+          </p>
+        </div>
+
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página">
+        <header>
+          <p class="pag">Página 4</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">Teste de glossários | role="doc-glossref"</h2>
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+            <code>
+              &#x3C;p class=&#x22;texto&#x22;&#x3E;
+              A seguir, &#xE9; apresentado um
+              &#x3C;dfn id=&#x22;glossario_id_aXl113713315399_voc&#x22;
+                &#x3E;&#x3C;span class=&#x22;vocabulario&#x22;&#x3E;algoritmo&#x3C;/span
+                &#x3E;&#x3C;<mark>a  role=&#x22;doc-glossref&#x22;</mark>
+                  aria-label=&#x22;acessar o gloss&#xE1;rio do termo&#x22;
+                  href=&#x22;#glossario_id_aXl113713315399_glos&#x22;
+                  &#x3E;&#x3C;sup&#x3E;&#x271A;&#x3C;/sup&#x3E;&#x3C;/a
+                &#x3E;&#x3C;/dfn
+              &#x3E;
+              que possibilita verificar se um n&#xFA;mero &#xE9; par ou &#xED;mpar.
+            &#x3C;/p&#x3E;
+  
+            &#x3C;dfn id=&#x22;glossario_id_aXl113713315398_voc&#x22;
+              &#x3E;&#x3C;span class=&#x22;vocabulario&#x22;&#x3E;palavra&#x3C;/span
+              &#x3E;&#x3C;a
+                aria-label=&#x22;acessar o gloss&#xE1;rio do termo&#x22;
+                href=&#x22;#glossario_id_aXl113713315398_glos&#x22;
+                &#x3E;&#x3C;<mark>sup role=&#x22;doc-glossref&#x22;</mark>&#x3E;+&#x3C;/sup&#x3E;&#x3C;/a
+              &#x3E;&#x3C;/dfn
+            &#x3E;
+  &#x3C;p&#x3E;
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam esse
+              reiciendis eos veniam neque est, adipisci sapiente odit magni quos
+              sunt cumque illo, asperiores laudantium quas vel maiores delectus
+              magnam?
+            &#x3C;/p&#x3E;
+  
+            &#x3C;dl aria-label=&#x22;Gloss&#xE1;rio&#x22; class=&#x22;gloss&#x22;&#x3E;
+              &#x3C;dt id=&#x22;glossario_id_aXl113713315399_glos&#x22;&#x3E;
+                &#x3C;dfn&#x3E;Algoritmo:&#x3C;/dfn&#x3E;
+              &#x3C;/dt&#x3E;
+              &#x3C;dd&#x3E;
+                sequ&#xEA;ncia de comandos, regras ou tarefas que possibilita
+                solucionar um problema.&#x3C;a
+                  aria-label=&#x22;voltar ao termo&#x22;
+                  href=&#x22;#glossario_id_aXl113713315399_voc&#x22;
+                  role=&#x22;doc-backlink&#x22;
+                  &#x3E;&#x3C;sup&#x3E;&#x21B0;&#x3C;/sup&#x3E;&#x3C;/a
+                &#x3E;
+              &#x3C;/dd&#x3E;
+            &#x3C;/dl&#x3E;
+            </code>
+           </pre>
+          </details>
+
+          <p class="texto">
+            A seguir, é apresentado um
+            <dfn id="glossario_id_aXl113713315399_voc"
+              ><span class="vocabulario">algoritmo</span
+              ><a  role="doc-glossref"
+                aria-label="acessar o glossário do termo"
+                href="#glossario_id_aXl113713315399_glos"
+                ><sup>✚</sup></a
+              ></dfn
+            >
+            que possibilita verificar se um número é par ou ímpar.
+          </p>
+
+          <dfn id="glossario_id_aXl113713315398_voc"
+            ><span class="vocabulario">palavra</span
+            ><a
+              aria-label="acessar o glossário do termo"
+              href="#glossario_id_aXl113713315398_glos"
+              ><sup role="doc-glossref">+</sup></a
+            ></dfn
+          >
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>A seguir, é apresentado um algoritmo  link para acessar o glossário do termo  que possibilita verificar se um número é par ou ímpar.</p>
+              <p>Algoritmo:
+                sequência de comandos, regras ou tarefas que possibilita solucionar um problema link para voltar ao termo</p>
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock">
+            <p>A seguir, é apresentado um algoritmo  link acessar o glossário do termo  que possibilita verificar se um número é par ou ímpar.</p>
+            <p>acessar o glossário do termo link</p>
+            <p>Link para acessar o glossário do termo</p>
+            <p>Glossário  lista  com 2 itens  Algoritmo:</p>
+            <p>sequência de comandos, regras ou tarefas que possibilita solucionar um problema link    voltar ao termo</p>
+
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Safari</p>
+          <blockquote class="leiturablock">
+            <p>A seguir, é apresentado um algoritmo link que possibilita verificar se um número é par ou ímpar.</p>
+            <p>Link acessar o glossário do termo.</p>
+            <p>Lista de descrições glossário um item</p>
+            <p>Algoritmo:
+              sequência de comandos, regras ou tarefas que possibilita solucionar um problema link voltar ao termo</p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Firefox</p>
+          <blockquote class="leiturablock">
+            <p>A seguir, é apresentado um algoritmo link acesssar o glossário do termo que possibilita verificar se um número é par ou ímpar.</p>
+            <p>Link para acessar o glossário do termo.</p>
+            <p>Lista de descrições glossário um item</p>
+            <p>Algoritmo term Algoritimo
+              sequência de comandos, regras ou tarefas que possibilita solucionar um problema link voltar ao termo</p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome</p>
+          <blockquote class="leiturablock">
+            <p>A seguir, é apresentado um algoritmo link referência de glossário acessar o glossário do termo que possibilita verificar se um número é par ou ímpar.</p>
+            <p>referência de glossário link para acessar o glossário do termo.</p>
+            <p>Lista de descrições glossário dois itens</p>
+            <p>Algoritmo 
+              sequência de comandos, regras ou tarefas que possibilita solucionar um problema backlink voltar ao termo</p>
+          </blockquote>
+
+          <p class="comentarioCode">
+            Verificado que o <mark>caracter ✚ não é lido pelo Voice Over no Safari,
+              não ocorrendo a leitura do link de glossário.</mark> Verificado que com a
+              troca do caracter ✚ por + passa a ocorrer a leitura do link pelo
+              Voice Over. Sendo assim, é <mark>necessário testar qual será o caracter
+              utilizado como âncora do termo glossariado.</mark> Além disso, observado que no Lighthouse a aplicação de role="doc-glossref" na tag sup é indicada como um erro. Para corrigir o erro, <mark>o role="doc-glossref" deve ser aplicado na tag do link (âncora), e não na tag sup</mark>. De acordo com a <a href="https://kb.daisy.org/publishing/docs/html/dpub-aria/doc-glossref.html">documentanção Daisy</a>, o doc-glossref é tipicamente aplicado em elemntos de links (tag a) e herda a semântica dos links.
+              Indicado consultar <a href="https://www.w3.org/TR/epub-aria-authoring/#sec-mappings">https://www.w3.org/TR/epub-aria-authoring/#sec-mappings</a> para ver roles e elementos nos quais são permitidos.
+          </p>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam esse
+            reiciendis eos veniam neque est, adipisci sapiente odit magni quos
+            sunt cumque illo, asperiores laudantium quas vel maiores delectus
+            magnam?
+          </p>
+
+          <dl aria-label="Glossário" class="gloss">
+            <dt id="glossario_id_aXl113713315399_glos">
+              <dfn>Algoritmo:</dfn>
+            </dt>
+            <dd>
+              sequência de comandos, regras ou tarefas que possibilita
+              solucionar um problema.<a
+                aria-label="voltar ao termo"
+                href="#glossario_id_aXl113713315399_voc"
+                role="doc-backlink"
+                ><sup>↰</sup></a
+              >
+            </dd>
+          </dl>
+
+          <p class="comentarioCode">
+            Os links de ida e volta do glossário funcionam bem no Edge,
+              Chrome, Opera e Thorium porém, no Firefox ao clicar no link de
+              volta é realizada a leitura do parágrafo desde o início.
+          
+            O role="doc-backlink" aplicado na âncora de retorno ao termo não
+              afeta a leitura do NVDA em nenhum dos navegadores.
+          
+            Sugestão para ajuste de glossário: <mark>tirar a palavra "para" dos
+              aria-label de link de ida e link de retorno (ficando: "acessar o
+              glossário do termpo" e "voltar ao termo")</mark>. Isso porque no Thorium,
+              pela leitura realizada pelo leitor nativo do software, não é feita
+              a declaração de "link" antes de ser lido o aria-label do link de
+              glossário.
+          </p>
+
+       
+
+          <h2 class="instrucao">Teste de role="doc-biblioref"</h2>
+          
+          <p class="credGeral" role="doc-biblioref">
+            BRASIL. Agência Espacial Brasileira. Disponível em:
+            https://tedit.net/fszL7H. Acesso em: 13 maio 2022.
+          </p>
+
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;p class=&#x22;credGeral&#x22; role=&#x22;doc-biblioref&#x22;&#x3E;
+                BRASIL. Ag&#xEA;ncia Espacial Brasileira. Dispon&#xED;vel em:
+                https://tedit.net/fszL7H. Acesso em: 13 maio 2022.
+              &#x3C;/p&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>BRASIL. Agência Espacial Brasileira. Disponível em: https://tedit.net/fszL7H Acesso em 13 maio 2022.</p>
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Opera</p>
+          <blockquote class="leiturablock">
+            <p>BRASIL. Agência Espacial Brasileira. Disponível em: https://tedit.net/fszL7H Acesso em 13 maio 2022.</p>
+          </blockquote>    
+          
+          <p class="leitura">Leitura no NVDA + Firefox</p>
+          <blockquote class="leiturablock">
+            <p>link BRASIL. Agência Espacial Brasileira. Disponível em: https://tedit.net/fszL7H Acesso em 13 maio 2022.</p>
+          </blockquote> 
+
+          <p class="leitura">Leitura no Voice Over + Firefox/Safari</p>
+          <blockquote class="leiturablock">
+            <p>link BRASIL. Agência Espacial Brasileira. Disponível em: https://tedit.net/fszL7H Acesso em 13 maio 2022.</p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome</p>
+          <blockquote class="leiturablock">
+            <p>referência bibliográfica BRASIL. Agência Espacial Brasileira. Disponível em: https://tedit.net/fszL7H Acesso em 13 maio 2022.</p>
+          </blockquote>
+
+          <p class="comentarioCode">
+            O role="doc-biblioref" é lido no Firefox como "link", nos demais
+              navegadores a leitura ocorre normalmente. <mark>No Lighthouse o uso do
+              role="doc-biblioref" em tag de parágrafo é indicado como erro</mark> -
+              <span lang="en">not valid ARIA roles</span>. De acordo com a <a href="https://kb.daisy.org/publishing/docs/html/dpub-aria/doc-biblioref.html">documentanção Daisy</a>, o doc-biblioref é tipicamente aplicado em elemntos de links (tag a) e herda a semântica dos links.
+              Indicado consultar <a href="https://www.w3.org/TR/epub-aria-authoring/#sec-mappings">https://www.w3.org/TR/epub-aria-authoring/#sec-mappings</a> para ver roles e elementos nos quais são permitidos.
+          </p>
+
+          <h2 class="instrucao">Teste de role="doc-credit"</h2>
+          <p class="credGeral" role="doc-credit">
+            BRASIL. Agência Espacial Brasileira. Disponível em:
+            https://tedit.net/fszL7H. Acesso em: 13 maio 2022.
+          </p>
+
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;p class=&#x22;credGeral&#x22; role=&#x22;doc-credit&#x22;&#x3E;
+                BRASIL. Ag&#xEA;ncia Espacial Brasileira. Dispon&#xED;vel em:
+                https://tedit.net/fszL7H. Acesso em: 13 maio 2022.
+              &#x3C;/p&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>
+                BRASIL. Agência Espacial Brasileira. Disponível em:
+                https://tedit.net/fszL7H. Acesso em: 13 maio 2022.
+              </p>
+            </blockquote>
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página">
+        <header>
+          <p class="pag">Página 5</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2>Links para documentações desatualizadas na minuta do Edital</h2>
+          <p>
+            Na minuta do Edital (item 2.7) é referenciado o link
+            <a
+              href="https://www.w3.org/publishing/epub32/epub-contentdocs.html#sec-css-content-conf"
+              >https://www.w3.org/publishing/epub32/epub-contentdocs.html#sec-css-content-conf</a
+            >
+            (referente ao epub 3.2), porém, ao acessá-lo é exibido um aviso de
+            que essa é uma versão desatualizada, sendo fornecido links para as
+            documentações atualizadas:
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.w3.org/TR/epub/"
+                >https://www.w3.org/TR/epub/</a
+              >
+              - referente ao epub 3.3
+            </li>
+            <li>
+              <a href="https://www.w3.org/TR/epub-rs/"
+                >https://www.w3.org/TR/epub-rs/</a
+              >
+            </li>
+          </ul>
+
+          <h2 class="instrucao">Teste de caracter com role="img" e aria-label</h2>
+
+          <p>
+            Teste de utilização de caracter
+            <span role="img" aria-label="lacuna para resposta">&#x2B1B;</span>
+            com a aplicação de role="img" e aria-label para controlar a forma de
+            leitura.
+          </p>
+
+          <details>
+            <summary class="summary aplicar">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;p&#x3E;
+            Teste de utiliza&#xE7;&#xE3;o de caracter
+            &#x3C;span role=&#x22;img&#x22; aria-label=&#x22;lacuna para resposta&#x22;&#x3E;&#x26;#x2B1B;&#x3C;/span&#x3E;
+            com a aplica&#xE7;&#xE3;o de role=&#x22;img&#x22; e aria-label para controlar a forma de
+            leitura.
+          &#x3C;/p&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>Teste de utilização de caracter <mark>quadrado preto grande</mark> com a aplicação de role="img" e aria-label 
+              </p>
+            </blockquote>
+
+          <p class="leitura"> Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock">
+            <p>Teste de utilização de caracter   <mark>gráfico    lacuna para resposta</mark>   com a aplicação de role="img" e aria-label 
+            </p>
+          </blockquote>
+
+          <p class="leitura"> Leitura no Voice Over + Chrome/Firefox/Safari</p>
+          <blockquote class="leiturablock">
+            <p>
+              Teste de utilização de caracter <mark>lacuna para resposta imagem</mark> com a aplicação de role="img" e aria-label para controlar a forma de leitura.
+            </p>
+          </blockquote>
+
+          <p class="comentarioCode">
+            A aplicação de role="img" com aria-label funciona da forma
+              esperada nos navegadores Chrome, Edge, Firefox e Opera, porém, <mark>no
+              Thorium não é realizada a leitura</mark>. Desse modo, para o caso de
+              lacunas, não utilizar o recurso de role="img". 
+              Sugestão: utilizar a
+              identificação de lacunas por meio de mathML a fim de padronizar o
+              tratamento de lacunas nas obras.
+          </p>
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página" role="doc-credits">
+        <header>
+          <p class="pag">Página 6</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">Teste de role="doc-credits" aplicado na section</h2>
+          
+          <ul>
+            <li class="creditoimagem">
+              <span class="marcacao_pag_credito_img">Página 8</span
+              ><span class="separador_credito"> - </span>Igor
+              Bulgarin/Shutterstock.com
+            </li>
+            <li class="creditoimagem">
+              <span class="marcacao_pag_credito_img">Página 8</span
+              ><span class="separador_credito"> - </span>aberCPC/Alamy/Fotoarena
+            </li>
+            <li class="creditoimagem">
+              <span class="marcacao_pag_credito_img">Página 8</span
+              ><span class="separador_credito"> - </span>Delfim Martins/Pulsar
+              Imagens
+            </li>
+            <li class="creditoimagem">
+              <span class="marcacao_pag_credito_img">Página 9</span
+              ><span class="separador_credito"> - </span>Arquivo/Estadão
+              Conteúdo
+            </li>
+            <li class="creditoimagem">
+              <span class="marcacao_pag_credito_img">Página 9</span
+              ><span class="separador_credito"> - </span>Laura Radford/Everett
+              Collection/Fotoarena/Netflix
+            </li>
+          </ul>
+
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code> &#x3C;section class=&#x22;pag000&#x22; aria-label=&#x22;P&#xE1;gina&#x22; role=&#x22;doc-credits&#x22;&#x3E;
+                &#x3C;header&#x3E;
+                  &#x3C;p class=&#x22;pag&#x22;&#x3E;P&#xE1;gina 6&#x3C;/p&#x3E;
+                &#x3C;/header&#x3E;</code>
+            </pre>
+          </details>
+
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>página seis</p>
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock">
+            <p>página marco </p>
+            <p>página seis</p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Firefox/Safari</p>
+          <blockquote class="leiturablock">
+            <p>página region </p>
+            <p>página seis</p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome</p>
+          <blockquote class="leiturablock">
+            <p>página créditos</p>
+            <p>página seis</p>
+          </blockquote>
+
+          <p class="comentarioCode">Somente no Voice Over + Chrome ocorre a leitura do role="doc-credits" como "créditos".</p>
+         
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página" role="doc-bibliography">
+        <header>
+          <p class="pag">Página 7</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">Teste de role="doc-bibliography" na section</h2>
+          <h3 class="ti_referenciascom" id="refbibliocomentada">
+            Referências bibliográficas comentadas
+          </h3>
+          <ol>
+            <li class="bibl">
+              <p role="doc-biblioref">
+                ARANHA, Carmen S. G. <strong>Exercícios do olhar</strong>. São
+                Paulo:
+                <abbr
+                  class="ajustepronuncia"
+                  id="aj_pro_id_f111739634690ab"
+                  title="Universidade Estadual Paulista"
+                  >Unesp</abbr
+                >; Rio de Janeiro:
+                <span
+                  aria-label="Fúnarte"
+                  class="ajustepronuncia"
+                  id="aj_pro_id_s111739635658cr"
+                  >Funarte</span
+                >, 2008.
+              </p>
+            </li>
+            <li class="bibl_comen">
+              <p>
+                Essa obra apresenta considerações relevantes
+                <span
+                  aria-label="sôbre"
+                  class="ajustepronuncia"
+                  id="aj_pro_id_m111739635873on"
+                  >sobre</span
+                >
+                a criatividade artística e o desenvolvimento criativo, com
+                exemplos baseados na realidade em sala de aula mostrados ao
+                longo da leitura.
+              </p>
+            </li>
+            <li class="bibl">
+              <p role="doc-biblioref">
+                BARBA, Eugenio; SAVARESE, Nicola (<abbr
+                  class="ajustepronuncia"
+                  id="aj_pro_id_n111739635976hi"
+                  title="Organização"
+                  >org.</abbr
+                >). <strong>A arte secreta do ator</strong>: dicionário de
+                antropologia teatral. Tradução: Patrícia Furtado de Medonça. São
+                Paulo: É Realizações, 2012.
+              </p>
+            </li>
+            <li class="bibl_comen">
+              <p>
+                Essa obra apresenta vários conceitos referentes ao trabalho de
+                atores e dançarinos e os ilustra com exemplos cênicos de
+                diferentes culturas. Também discorre
+                <span
+                  aria-label="sôbre"
+                  class="ajustepronuncia"
+                  id="aj_pro_id_m111739636042yk"
+                  >sobre</span
+                >
+                diversos elementos de integração entre as linguagens do Teatro e
+                da Dança.
+              </p>
+            </li>
+          </ol>
+
+          <details>
+            <summary class="summary">Ver código</summary>
+            <pre class="codigoExemplo">
+              <code>
+                &#x3C;section class=&#x22;pag000&#x22; aria-label=&#x22;P&#xE1;gina&#x22; <mark>role=&#x22;doc-bibliography&#x22;</mark>&#x3E;
+        &#x3C;header&#x3E;
+          &#x3C;p class=&#x22;pag&#x22;&#x3E;P&#xE1;gina 7&#x3C;/p&#x3E;
+        &#x3C;/header&#x3E;
+        &#x3C;!--Livro texto aluno --&#x3E;
+        &#x3C;div class=&#x22;box_aluno&#x22; role=&#x22;region&#x22; aria-label=&#x22;Conte&#xFA;do da p&#xE1;gina&#x22;&#x3E;
+          &#x3C;h2 class=&#x22;instrucao&#x22;&#x3E;Teste de role=&#x22;doc-bibliography&#x22; na section&#x3C;/h2&#x3E;
+          &#x3C;h3 class=&#x22;ti_referenciascom&#x22; id=&#x22;refbibliocomentada&#x22;&#x3E;
+            Refer&#xEA;ncias bibliogr&#xE1;ficas comentadas
+          &#x3C;/h3&#x3E;
+          &#x3C;ol&#x3E;
+            &#x3C;li class=&#x22;bibl&#x22;&#x3E;
+              &#x3C;p role=&#x22;doc-biblioref&#x22;&#x3E;
+                ARANHA, Carmen S. G. &#x3C;strong&#x3E;Exerc&#xED;cios do olhar&#x3C;/strong&#x3E;. S&#xE3;o
+                Paulo:
+                &#x3C;abbr
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_f111739634690ab&#x22;
+                  title=&#x22;Universidade Estadual Paulista&#x22;
+                  &#x3E;Unesp&#x3C;/abbr
+                &#x3E;; Rio de Janeiro:
+                &#x3C;span
+                  aria-label=&#x22;F&#xFA;narte&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_s111739635658cr&#x22;
+                  &#x3E;Funarte&#x3C;/span
+                &#x3E;, 2008.
+              &#x3C;/p&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;bibl_comen&#x22;&#x3E;
+              &#x3C;p&#x3E;
+                Essa obra apresenta considera&#xE7;&#xF5;es relevantes
+                &#x3C;span
+                  aria-label=&#x22;s&#xF4;bre&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_m111739635873on&#x22;
+                  &#x3E;sobre&#x3C;/span
+                &#x3E;
+                a criatividade art&#xED;stica e o desenvolvimento criativo, com
+                exemplos baseados na realidade em sala de aula mostrados ao
+                longo da leitura.
+              &#x3C;/p&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;bibl&#x22;&#x3E;
+              &#x3C;p role=&#x22;doc-biblioref&#x22;&#x3E;
+                BARBA, Eugenio; SAVARESE, Nicola (&#x3C;abbr
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_n111739635976hi&#x22;
+                  title=&#x22;Organiza&#xE7;&#xE3;o&#x22;
+                  &#x3E;org.&#x3C;/abbr
+                &#x3E;). &#x3C;strong&#x3E;A arte secreta do ator&#x3C;/strong&#x3E;: dicion&#xE1;rio de
+                antropologia teatral. Tradu&#xE7;&#xE3;o: Patr&#xED;cia Furtado de Medon&#xE7;a. S&#xE3;o
+                Paulo: &#xC9; Realiza&#xE7;&#xF5;es, 2012.
+              &#x3C;/p&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;bibl_comen&#x22;&#x3E;
+              &#x3C;p&#x3E;
+                Essa obra apresenta v&#xE1;rios conceitos referentes ao trabalho de
+                atores e dan&#xE7;arinos e os ilustra com exemplos c&#xEA;nicos de
+                diferentes culturas. Tamb&#xE9;m discorre
+                &#x3C;span
+                  aria-label=&#x22;s&#xF4;bre&#x22;
+                  class=&#x22;ajustepronuncia&#x22;
+                  id=&#x22;aj_pro_id_m111739636042yk&#x22;
+                  &#x3E;sobre&#x3C;/span
+                &#x3E;
+                diversos elementos de integra&#xE7;&#xE3;o entre as linguagens do Teatro e
+                da Dan&#xE7;a.
+              &#x3C;/p&#x3E;
+            &#x3C;/li&#x3E;
+          &#x3C;/ol&#x3E;
+              </code>
+            </pre>
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>página sete</p>
+            </blockquote>
+
+            <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              <p>página marco página sete</p>
+            </blockquote>
+
+
+            <p class="comentarioCode">Não há alteração na leitura que indique que se trata de uma seção bibliográfica.</p>
+        </div>
+
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página">
+        <header>
+          <p class="pag">Página 8</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">
+            Teste de legenda: mais de um img dentro de um figure com um
+            figcaption
+          </h2>
+          <figure>
+            <img src="../resources/images/enriquecimento/panorama/panorama03.jpg" alt="primeiro texto aternativo" />
+            <img
+              src="../resources/images/enriquecimento/panorama/panorama01.jpg"
+              alt="segundo texto alternativo"
+            />
+            <img
+              src="../resources/images/enriquecimento/panorama/panorama02.jpg"
+              alt="terceiro texto alternativo"
+            />
+
+            <figcaption>Uma legenda para três imagens</figcaption>
+          </figure>
+
+          <details>
+            <summary class="summary">Ver código:</summary>
+            <!-- Exemplo de modelo de código (lembrar de trocar a entidade)  --><pre>
+            <code class="codigoExemplo">
+                
+                  &#x3C;figure&#x3E;
+            &#x3C;img src=&#x22;../resources/images/enriquecimento/panorama/panorama03.jpg&#x22; alt=&#x22;primeiro texto aternativo&#x22; /&#x3E;
+            &#x3C;img
+              src=&#x22;../resources/images/enriquecimento/panorama/panorama01.jpg&#x22;
+              alt=&#x22;segundo texto alternativo&#x22;
+            /&#x3E;
+            &#x3C;img
+              src=&#x22;../resources/images/enriquecimento/panorama/panorama02.jpg&#x22;
+              alt=&#x22;terceiro texto alternativo&#x22;
+            /&#x3E;
+
+            &#x3C;figcaption&#x3E;Uma legenda para tr&#xEA;s imagens&#x3C;/figcaption&#x3E;
+          &#x3C;/figure&#x3E;
+                
+              </code></pre>
+            <!-- Exemplo de modelo de código   -->
+          </details>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock">
+           <p> figura   </p>
+            <p>gráfico    primeiro texto aternativo</p>
+<p>gráfico    segundo texto alternativo</p>
+<p>gráfico    terceiro texto alternativo</p>
+<p>legenda    Uma legenda para três imagens  fora de figura</p>
+
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome/Firefox/Safari</p>
+            <blockquote class="leiturablock">
+              <p>Uma legenda para três imagens figura.</p>
+              <p>Primeiro texto alternativo imagem</p>
+              <p>Segundo texto alternativo imagem</p>
+              <p>Terceiro texto alternativo imagem</p>
+              <p>Uma legenda para três imagens figura.</p>
+            </blockquote>
+          
+
+          <p class="comentarioCode">É possível utilizar vários img dentro de um figure havendo uma única legenda para o figure, no entanto, esse tipo de "agrupamento" de img dentro de figure pode não ser ideal para a "automatização" dos processos, sendo assim indicado que se mantenha sempre a lógica de uma legenda para cada imagem e uma imagem para cada legenda.</p>
+
+          <h2>Teste de utilização de tag details com summary</h2>
+          <details>
+            <summary>Descrição longa da imagem:</summary>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              hic voluptatibus! Nesciunt nam nihil pariatur tempora impedit
+              incidunt laborum eum nostrum corrupti, sapiente consequatur
+              deleniti eveniet est mollitia rem dignissimos?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              molestiae, numquam eaque sed repellat veniam esse culpa? Minus,
+              aspernatur. Possimus velit adipisci cum eaque minus eius ducimus
+              facilis, sint nobis?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              aliquam dolor in nostrum provident veritatis quasi rem natus sunt.
+              Sit optio quisquam aliquam earum, tenetur cumque adipisci quae
+              non. Nisi.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+              amet sequi quibusdam. Exercitationem deleniti magnam unde ea,
+              cupiditate dicta mollitia harum? Omnis, ipsa eos. Consectetur
+              excepturi eius commodi laudantium labore!
+            </p>
+          </details>
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+
+      <section class="pag000" aria-label="Página">
+        <header>
+          <p class="pag">Página 9</p>
+        </header>
+        <!--Livro texto aluno -->
+        <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+          <h2 class="instrucao">Teste de mathml | operador de divisão como : (dois pontos)</h2>
+
+          <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="1050 dividido por 50" id="mathml_id_5703069907zhx">
+            <mrow>
+              <mrow>
+                <mn>1050</mn>
+                <mo mathvariant="bold">:</mo>
+                <mn>50</mn>
+              </mrow>
+            </mrow>
+          </math>
+          
+          <details>
+            <summary class="summary">Ver código</summary>
+              <pre>
+                <code class="codigoExemplo">
+                  &#x3C;math xmlns=&#x22;http://www.w3.org/1998/Math/MathML&#x22; alttext=&#x22;236 dividido por 4&#x22; id=&#x22;mathml_id_5703069907zhx&#x22;&#x3E;
+              &#x3C;mrow&#x3E;
+                &#x3C;mrow&#x3E;
+                  &#x3C;mn&#x3E;1050&#x3C;/mn&#x3E;
+                  &#x3C;mo mathvariant=&#x22;bold&#x22;&#x3E;:&#x3C;/mo&#x3E;
+                  &#x3C;mn&#x3E;50&#x3C;/mn&#x3E;
+                &#x3C;/mrow&#x3E;
+              &#x3C;/mrow&#x3E;
+            &#x3C;/math&#x3E;
+                </code>
+              </pre>
+            
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              um mil e cinqueta dividido por cinquenta
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>Mil e cinquenta dois pontos cinquenta </p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome/Firefox/Safari</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>Mil e cinquenta divido por cinquenta matemática</p>
+          </blockquote>
+
+          <p class="comentarioCode">Não ocorre a leitura do símbolo de divisão corretamente, sendo declarado como "dois pontos" tanto no NVDA quanto no Voice Over (alttext não é lido nos browsers). Já <mark>no Thorium, é realizada a leitura do alttext aplicado no mathML</mark>.</p>
+
+          <h2 class="instrucao">Teste de mathml | operador de divisão como entidade HTML &#xF7;</h2>
+
+          <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1050</mn><mo>&#xF7;</mo><mn>50</mn><mo>=</mo><mn>21</mn></math>
+
+          <details>
+            <summary class="summary aplicar">Ver código</summary>
+            <pre><code class="codigoExemplo">
+              
+                &#x3C;math xmlns=&#x22;http://www.w3.org/1998/Math/MathML&#x22;&#x3E;
+&#x3C;mn&#x3E;1050&#x3C;/mn&#x3E;&#x3C;mo&#x3E;&#x26;#xF7;&#x3C;/mo&#x3E;&#x3C;mn&#x3E;50&#x3C;/mn&#x3E;
+&#x3C;mo&#x3E;=&#x3C;/mo&#x3E;&#x3C;mn&#x3E;21&#x3C;/mn&#x3E;&#x3C;/math&#x3E;
+            
+            </code>  </pre>
+          </details>
+
+          <p class="leitura">Leitura no Thorium Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+            <blockquote class="leiturablock" role="doc-pullquote">
+              Mil e cinquenta <em lang="en">devided by</em> cinquenta <em lang="en">equals</em> vinte e um
+            </blockquote>
+
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>Mil e cinquenta dividido por cinquenta igual vinte e um</p>
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome/Firefox/Safari</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>Mil e cinquenta dividido por cinquenta igual vinte e um com cinco itens matemática</p>
+          </blockquote>
+
+          <p class="comentarioCode">No caso de utilização da entidade HTML, ocorre a leitura corretamente do símbolo de divisão, tanto no NVDA quanto no Voice Over. <mark>No Thorium é realizada a leitura do alttext aplicado no mathML</mark>.</p>
+
+          <h2 class="instrucao">
+            Teste de caracteres especiais
+          </h2>
+
+          
+
+            <p>
+              <math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="delta maiúsculo menor do que cento e cinquenta" displaystyle="true" id="mathml_id_5117260130lmq">
+              <mrow>
+              <mi mathvariant="normal">Δ</mi>
+              <mo>&lt;</mo>
+              <mn>150</mn>
+              </mrow>
+              </math>
+            </p>
+
+            <p>30º aluno a terminar a prova.</p>
+            <p>115ª aluna a ganhar o prêmio.</p>
+            <p>Temperatura de 35° C.</p>
+
+            <details>
+              <summary class="summary">Ver código</summary>
+              <pre class="codigoExemplo">
+                <code >
+                  &#x3C;p&#x3E;
+                &#x3C;math xmlns=&#x22;http://www.w3.org/1998/Math/MathML&#x22;  alttext=&#x22;delta mai&#xFA;sculo menor do que cento e cinquenta&#x22; displaystyle=&#x22;true&#x22; id=&#x22;mathml_id_5117260130lmq&#x22;&#x3E;
+                &#x3C;mrow&#x3E;
+                &#x3C;mi mathvariant=&#x22;normal&#x22;&#x3E;&#x394;&#x3C;/mi&#x3E;
+                &#x3C;mo&#x3E;&#x26;lt;&#x3C;/mo&#x3E;
+                &#x3C;mn&#x3E;150&#x3C;/mn&#x3E;
+                &#x3C;/mrow&#x3E;
+                &#x3C;/math&#x3E;
+              &#x3C;/p&#x3E;
+  
+              &#x3C;p&#x3E;30&#xBA; aluno a terminar a prova.&#x3C;/p&#x3E;
+              &#x3C;p&#x3E;115&#xAA; aluna a ganhar o pr&#xEA;mio.&#x3C;/p&#x3E;
+              &#x3C;p&#x3E;Temperatura de 35&#xB0; C.&#x3C;/p&#x3E;
+                </code>
+              </pre>
+            </details>
+
+          <p class="leitura">Leitura no Thorium - Windows (voz Microsoft Daniel - Portuguese Brazil)</p>
+          <blockquote class="leiturablock">
+            <p>delta maiúsculo menor do que cento e cinquenta</p>
+            <p>trigésimo aluno a terminar a prova</p>
+            <p>centésima décima quinta aluna a ganhar o prêmio</p>
+            <p>temperatura de trinta e cinco graus celcius</p>
+          </blockquote>
+         
+          <p class="leitura">Leitura no NVDA + Chrome/Edge/Firefox/Opera</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>delta menor cento e cinquenta.</p>
+            <p>Trigésimo aluno a terminar a prova.</p>
+            <p>Centésima décima quinta aluna a ganhar o prêmio</p>
+            <p>Temperatura de trinta e cinco graus C.</p>
+
+          </blockquote>
+
+          <p class="leitura">Leitura no Voice Over + Chrome/Firefox/Safari</p>
+          <blockquote class="leiturablock" role="doc-pullquote">
+            <p>*ocorre a leitura em grego (por conta do caracter delta)</p>
+            <p>trinta graus aluno a terminar a prova</p>
+            <p>cento e quinze indicador ordinal feminino aluna a ganhar o prêmio</p>
+            <p>temperatura de trinta e cinco graus celcius</p>
+          </blockquote>
+
+          <p class="comentarioCode">
+            Em teste no NVDA com o sintetizador SpeakNg (variante Pablo - pt-BR) é realizada a leitura do símbolo Δ. Ainda no NVDA, mas com o sintetizador do Windows One core (Daniel) não é realizada a leitura do símbolo Δ. No Voice Over detectado que, após a ocorrência do símbolo Δ o restante da expressão é lida em grego. Sendo assim, entedemos que não há padrão de leitura de certos caracteres especiais. Podemos nos respaldar nos textos alternativos adicionados ao mathML, em conformidade com o Edital.
+          </p>
+
+          
+
+        </div>
+        <!--Livro texto aluno -->
+
+        <!--Manual do professor-->
+        <aside
+          class="box_professor_mp"
+          aria-label="Orientações específicas da página"
+        >
+          <h2 class="orienta">
+            <span>ORIENTAÇÕES AO PROFESSOR</span>
+          </h2>
+          <p class="orientaTx">
+            Não há orientações específicas para esta página.
+          </p>
+        </aside>
+        <!--Manual do professor-->
+      </section>
+    </main>
+  </body>
+</html>

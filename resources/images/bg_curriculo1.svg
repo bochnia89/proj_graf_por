@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150.961" height="74.343" viewBox="0 0 150.961 74.343">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_1599" data-name="Caminho 1599" d="M0,0H150.961V-74.343H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="bg_curriculo1" transform="translate(0 74.343)">
+    <g id="Grupo_1654" data-name="Grupo 1654" clip-path="url(#clip-path)">
+      <g id="Grupo_1653" data-name="Grupo 1653" transform="translate(0 -74.343)">
+        <path id="Caminho_1598" data-name="Caminho 1598" d="M0,0H0V47.431S28.709,74.343,75.48,74.343s75.481-26.912,75.481-26.912V0Z" fill="#5762a3"/>
+      </g>
+    </g>
+  </g>
+</svg>

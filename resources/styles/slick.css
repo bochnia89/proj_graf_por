@@ -1,0 +1,289 @@
+/***SLICK CSS***/
+
+/* classe adicionada para determinar largura de figcapition */
+figcaption{
+  display: table-caption;
+  caption-side: bottom;
+  text-align: left;
+}
+
+a{text-decoration: none;
+    color:#000} /*classe inserida em 13/06/2022*/
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+ 
+    user-select: none;
+   
+    touch-action: pan-y;
+    
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus {
+    outline: 0;
+}
+.slick-list.dragging {
+    cursor: pointer;
+   
+}
+.slick-slider .slick-list, .slick-slider .slick-track {
+    
+    transform: translate3d(0, 0, 0);
+}
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:after, .slick-track:before {
+    content: "";
+    display: table;
+}
+.slick-track:after {
+    clear: both;
+}
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+[dir=rtl] .slick-slide {
+    float: right;
+}
+.slick-slide figure img {
+    display: block;
+   
+    height: auto;
+    cursor:grabbing;
+      
+}
+
+.slick-slide figure img:focus {
+   opacity: 1;
+      
+}
+.slick-slide.slick-loading img {
+    display: none;
+}
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/***STYLES CSS***/
+
+main:focus,
+section:focus {
+  outline: none;
+}
+
+
+.box_imagem_carrossel{
+  padding:0 1em 0 1em;
+}
+
+/* Content blocks */
+.content {
+  margin: auto;
+  padding: 0 1em 0.5em 1em;
+  max-width: 95%;
+  height:auto;
+}
+
+  .content:after,
+  .buttons::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+
+
+
+/* Buttons */
+.button {
+  background: var(--alternative-color--dark);
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 48%;
+  border: 1px solid var(--alternative-color--light);
+}
+
+.buttons {
+  padding: 0 20px 20px;
+  margin-bottom: 10px;
+}
+
+  .buttons .button {
+    float: left;
+    margin: 5px;
+  }
+
+.filter .button {
+  margin-bottom: 40px;
+}
+
+
+/* Code snippets */
+pre {
+  overflow-x: scroll;
+  margin: 0 10px !important;
+  border-radius: 0 !important;
+  border: 2px solid black;
+}
+
+  code {
+    color: #000;
+    overflow-x: scroll;
+  }
+
+p code,
+li code,
+th code,
+td code {
+  position: relative;
+  padding: 2px 7px 4px 7px;
+  border-radius: 3px;
+  color: var(--alternative-color--dark);
+  background-color: var(--alternative-color--light);
+}
+
+  .alt-background p code,
+  .alt-background li code,
+  .alt-background th code,
+  .alt-background td code {
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+
+/** All sliders */
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon {
+  color: white;
+  
+  
+}
+
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon{
+  color: black;
+  
+  
+}
+
+.adaptive-height .slick-slide,
+.lazy .slick-slide,
+.fade .slick-slide {
+  height: auto;
+  min-height: 100px;
+}
+
+/*👉  .slick-slider p {
+    font-weight: bold;
+  }👈*/
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .fixed-header {
+    display: none !important;
+  }
+
+  .header ul.nav li {
+    display: block;
+    margin: 20px;
+  }
+
+  .alt-background h3 {
+    font-size: 24px;
+  }
+
+  .button {
+    margin: 0 auto 20px;
+    width: auto;
+  }
+
+  .button.first {
+    margin-top: 40px;
+  }
+
+  .buttons {
+    padding: 0 0 20px;
+  }
+
+  .buttons .button {
+    float: left;
+    font-size: 12px;
+    margin: 1%;
+    width: 48%;
+  }
+
+  .enriquecimento {
+    padding: 1em;
+  }
+
+  .enriquecimento h2 {
+    margin:0;
+  }
+
+  .content {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+ 
+/*******************************************************************
+  Improved .sr-only class by ffoodd
+  
+********************************************************************/
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
+
+
+}
