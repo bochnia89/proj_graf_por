@@ -2669,8 +2669,8 @@ dd sup {
 div.o1boxfundoazul1 {
     background: var(--azul3);
     border-radius: 0.5em;
-    padding: 0.2em 0.5em;
-    margin: 0.5em;
+    padding: 0.2em 1em;
+    margin: 1em 0;
     width: max-content;
     max-width: 100%;
 }
@@ -2713,6 +2713,17 @@ div.o1boxfundoroxo1 {
     margin: 1em 0;
     width: max-content;
     max-width: 100%;
+}
+
+div.o1boxfundoroxo1>p.p5marcador,
+div.o1boxfundoroxo2>p.p5marcador,
+div.o1boxfundoazul1>p.p5marcador{
+    margin: 0 0 0 -40px;
+}
+div.o1boxfundoroxo1:has(.p5marcador),
+div.o1boxfundoroxo2:has(.p5marcador),
+div.o1boxfundoazul1:has(.p5marcador){
+    margin: 1em 0 1em 1.5em;
 }
 
 p.o1boxfundoroxo1 {
