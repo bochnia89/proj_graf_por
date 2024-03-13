@@ -1185,6 +1185,7 @@ header .pag {
 .p2atvletrasubitemcont,
 .p2atvletraitemromano,
 .p2atvletraitemromanocont,
+.p2atvletramarcador,
 .p2atvmarcador,
 .p2atvmarcadorcont,
 .p2atvsomatoria,
@@ -1537,6 +1538,9 @@ p.p2atvsubitem {
 
 .p2atvletra {
     margin: 0.5em 0 0.5em 3em;
+}
+.p2atvletramarcador  {
+    margin: 0.5em 0 0.5em 5em;
 }
 
 .p2atvletracont {
@@ -1930,6 +1934,16 @@ blockquote.p3citacaoitem::before {
     text-align: center;
     margin: 0 0 0 -30px;
     width: 25px;
+}
+.p5marcador:contains("VIII.") {
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -35px;
+    width: 30px;
 }
 
 .p5marcador2 {
@@ -3261,6 +3275,8 @@ o5lousa
 o5moudura
 o5prancheta
 o5verbetedicionario
+o5email
+o5email2
 👈*/
 .o5papeleta1 {
     margin: 2em 0;
@@ -3602,6 +3618,82 @@ o5verbetedicionario
     color: var(--link);
 }
 
+/* E-mail */
+.o5email, .o5email2{
+    background: url(../images/ico_email.svg) right no-repeat var(--verde2);
+    background-position-y:8px ;
+    background-position-x:99% ;
+    background-size: 50px;
+    border-radius: 0.5em ;
+    padding: 1.5em 1em 1em 1em;
+    margin: 1em 0;
+}
+.infoemail {
+    background: var(--verde3);    
+    border-radius: 0.3em ;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+.btn_enviar{
+    background: url(../images/btn_enviar.svg) no-repeat var(--verde2);
+    border-radius: 0.3em ;
+    background-position-y:2em ;
+    background-position-x:center;
+    width: max-content;
+    padding: 4em 2em 1em 2em;
+}
+.infoemail>div{
+    width: 100%;
+}
+.p4cota{
+    display: flex;
+    gap: 0.5em;
+    margin: 0.5em 0;
+}
+.p4cota p:last-child{
+    background: var(--branco);
+    border-radius: 0.3em;
+    font-size: 0.9em;
+    padding: 0em 0.5em;
+    width: 100%;
+}
+.p4cota p:first-child{
+    font-size: 0.8em;   
+    text-align: right;    
+    width: 100px; 
+}
+.corpoemail{
+    background: var(--branco);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+.corpoemail>hr{
+    border-bottom: 1px solid var(--preto);
+    margin: 1em 0;
+}
+.corpoemail > .p4cota{
+    font-size: 0.8em;
+    margin: 0 0 0 0;   
+}
+.infoemail2{
+    display: flex;
+    gap: 1em;
+}
+.botoes_email{
+    width: 180px;
+}
+.botoes_email>.p4cota{
+    background: var(--verde3);
+    border-radius: 0.5em ;    
+    padding: 0.5em 0.8em ;
+    margin: 0 0 0.5em 0;
+}
+
+
+
 
 /* ------------------👉 CLASSES PARA PÁGINAS INICIAIS CONFIRMAR COM BRUNA 👈----------------------*/
 /* 
@@ -3701,7 +3793,27 @@ o5verbetedicionario
         padding: 0.5em 0 1em 0;
     }
 
+    /* E-MAIL MOBILE */
+    .infoemail {
+        background: var(--verde3);    
+        border-radius: 0.3em ;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1em;
+        padding: 0.5em;
+        margin: 0.5em 0;
+    }
 
+    .btn_enviar {
+        background: no-repeat var(--verde2);
+        border-radius: 0.3em ;
+        background-position-y:1em ;
+        background-position-x:1em;
+        width: 100%;
+        text-align: center;
+        padding:1em 2em 1em 2em;
+    }
     /*👉=================== ESTILOS MIOLO ================================👈*/
     /* TÍTULOS MOBILE  */
     .boxaberturatit {
