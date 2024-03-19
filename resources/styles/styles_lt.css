@@ -3428,7 +3428,7 @@ o5nota2
 o5navegador
 o5quadrobranco
 o5lousa
-o5moudura
+o5moldura
 o5prancheta
 o5verbetedicionario
 o5email
@@ -3735,10 +3735,10 @@ o5email2
     min-height: 300px;
 }
 
-/* Moudura */
-.o5moudura {
-    background: url(../images/pv_moudura.svg) top left no-repeat,
-        url(../images/pv_moudura.svg) bottom left no-repeat;
+/* moldura */
+.o5moldura {
+    background: url(../images/pv_moldura.svg) top left no-repeat,
+        url(../images/pv_moldura.svg) bottom left no-repeat;
     background-size: contain;
     padding: 1.5em 0;
 }
