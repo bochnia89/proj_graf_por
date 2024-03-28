@@ -20,3 +20,13 @@
   height: 200px;
 }
 
+/*👉ícone acessiblidade👈*/
+.descricao_longaOED summary::before {
+  background: url(../images/zoom1/ico_acessibilidade.svg);
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: -3px 0 0 -48px;
+  content: '';
+}
