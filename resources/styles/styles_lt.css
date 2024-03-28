@@ -1952,6 +1952,7 @@ blockquote.p3citacaoitem::before {
 /* Crédito Imagem*/
 
 .p4credimagem {
+    background: #3EE0CE;
     font-family: var(--texto);
     font-size: var(--pesoMenor);
     text-align: right;
@@ -2395,6 +2396,10 @@ dd sup {
 
 /* Estilo de caracter utilizado no manual em U */
 .c0bulletsubitem {}
+.c5destaqueverbetedicionario{
+    color: var(--link);
+}
+
 
 /* ESTILO DE OBJETO */
 .boxaberturatit {
