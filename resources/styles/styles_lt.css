@@ -1201,7 +1201,7 @@ p.p2textosemrecuoitem {
 }
 
 p.p2textosemrecuoitem::before {
-    content: '•';
+    content: ''; /* content: '•';*/
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
     position: absolute;
@@ -1240,7 +1240,7 @@ p.p2textoitem {
 }
 
 p.p2textoitem::before {
-    content: '•';
+    content: ''; /* content: '•';*/
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
     position: absolute;
@@ -1269,7 +1269,7 @@ p.p2textosubitem {
 }
 
 p.p2textosubitem::before {
-    content: '•';
+    content: ''; /* content: '•';*/
     color: var(--verde1);
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
@@ -1306,7 +1306,7 @@ p.p2textoletraitem {
 }
 
 p.p2textoletraitem::before {
-    content: '•';
+    content: ''; /* content: '•';*/
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
     position: absolute;
@@ -1336,7 +1336,7 @@ p.p2textomarcadoritem {
 }
 
 p.p2textomarcadoritem::before {
-    content: '•';
+    content: ''; /* content: '•';*/
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
     position: absolute;
@@ -1352,9 +1352,15 @@ ul.p2textomarcadorsubitem {
 }
 
 /*TODO: Aguardando de definição de uso*/
-ul.p2textomarcadorsubitem li::before,
+ul.p2textomarcadorsubitem li::before{
+    content: '•'; 
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
 p.p2textomarcadorsubitem::before {
-    content: '•';
+    content: ''; /* content: '•';*/
     color: var(--verde1);
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
@@ -1398,7 +1404,7 @@ p.p2questaoletraitem {
 }
 
 p.p2questaoletraitem::before {
-    content: '•';
+    content: ''; /*content: '•';*/
     font-size: 1.2em;
     width: 10px;
     height: 10px;
@@ -1420,7 +1426,7 @@ p.p2questaoitem {
 }
 
 p.p2questaoitem::before {
-    content: '•';
+    content: ''; /*content: '•';*/
     font-size: 1.2em;
     width: 10px;
     height: 10px;
@@ -1437,9 +1443,17 @@ p.p2questaosubitem {
     margin: 0.5em 0 0.5em 2em;
 }
 
-ul.p2questaosubitem li::before,
-p.p2questaosubitem::before {
+ul.p2questaosubitem li::before {
     content: '•';
+    color: var(--verde1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -14px;
+}
+p.p2questaosubitem::before {
+    content: ''; /*content: '•';*/
     color: var(--verde1);
     font-size: 1.2em;
     width: 10px;
@@ -1487,7 +1501,7 @@ p.p2atvitem {
 }
 
 p.p2atvitem::before {
-    content: '•';
+    content: ''; /*content: '•';*/
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
     position: absolute;
@@ -1501,14 +1515,21 @@ ul.p2atvsubitem {
     margin: 0.5em 0 0.5em 4em;
 }
 
-ul.p2atvsubitem li::before,
-p.p2atvsubitem::before {
+ul.p2atvsubitem li::before {
     content: '•';
     color: var(--verde1);
     font-size: 1.2em;
     margin: 0 0 0 -0.8em;
     position: absolute;
 }
+p.p2atvsubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--verde1);
+    font-size: 1.2em;
+    margin: 0 0 0 -0.8em;
+    position: absolute;
+}
+
 
 p.p2atvsubitem {
     margin: 0.5em 0 0.5em 4em;
@@ -1555,7 +1576,7 @@ p.p2atvletraitem {
 }
 
 p.p2atvletraitem::before {
-    content: '•';
+    content: ''; /*content: '•';*/
     font-size: 1.3em;
     width: 10px;
     height: 10px;
@@ -1572,8 +1593,7 @@ p.p2atvletrasubitem {
     margin: 0.5em 0 0.5em 5em;
 }
 
-ul.p2atvletrasubitem li::before,
-p.p2atvletrasubitem::before {
+ul.p2atvletrasubitem li::before{
     content: '•';
     color: var(--verde1);
     font-size: 1.2em;
@@ -1581,8 +1601,16 @@ p.p2atvletrasubitem::before {
     height: 10px;
     position: absolute;
     margin: 0 0 0 -12px;
+}
 
-
+p.p2atvletrasubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--verde1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 0 0 0 -12px;
 }
 
 .p2atvletrasubitemcont {
@@ -1657,7 +1685,7 @@ p.p3intermediarioitem{
     margin: 0.5em 0 0.5em 1em;
 }
 p.p3intermediarioitem::before{
-content: '•';
+content: ''; /*content: '•';*/
 font-size: 1.2em;
 width: 10px;
 height: 10px ;
@@ -1706,7 +1734,7 @@ p.p3intermediariosemrecuoitem {
 }
 
 p.p3intermediariosemrecuoitem::before {
-    content: '•';
+    content: ''; /*content: '•';*/
     font-size: 1.2em;
     width: 10px;
     height: 10px;
@@ -1811,7 +1839,7 @@ blockquote.p3citacaoitem {
 }
 
 blockquote.p3citacaoitem::before {
-    content: '•';
+    content: ''; /*content: '•';*/
     font-size: 1em;
     width: 10px;
     height: 10px;
@@ -1908,7 +1936,7 @@ p.p4cuidadodicaitem {
     margin: 0.5em 0 0.5em 1em ;
 }
 p.p4cuidadodicaitem::before{
-    content: '•';
+    content: ''; /*content: '•';*/
     font-size: 1.2em;
     width: 10px;
     height: 10px;

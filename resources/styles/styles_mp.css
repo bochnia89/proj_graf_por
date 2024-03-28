@@ -463,7 +463,6 @@
 .p2textompsemrecuo {
     font-family: var(--texto);
     font-size: var(--pesoPadrao);
-
 }
 
 .p2textompsemrecuoitem {}
@@ -473,14 +472,19 @@ p.p2textompsemrecuoitem {
     margin: 1em 0;
 }
 
-ul.p2textompsemrecuoitem li::before,
-p.p2textompsemrecuoitem::before {
+ul.p2textompsemrecuoitem li::before{
     content: '•';
     font-size: 1.2em;
     width: 10px;
     height: 10px;
     margin: 0 5px 0 0;
-
+}
+p.p2textompsemrecuoitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
 }
 
 .p2textompsemrecuoitemcont {}
@@ -490,8 +494,7 @@ p.p2textompsemrecuosubitem {
     margin: 1em 0 1em 1em;
 }
 
-ul.p2textompsemrecuosubitem li::before,
-p.p2textompsemrecuosubitem::before {
+ul.p2textompsemrecuosubitem li::before{
     content: '•';
     color: var(--laranja1);
     font-size: 1.2em;
@@ -500,6 +503,16 @@ p.p2textompsemrecuosubitem::before {
     margin: 0 5px 0 0;
 
 }
+p.p2textompsemrecuosubitem::before {
+    content: ''; /*content: '•';*/
+    color: var(--laranja1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
+
+}
+
 
 
 .p2textompnumsemrecuo {}
@@ -557,7 +570,14 @@ p.p2textompitem {
     text-align: justify;
 }
 
-p.p2textompitem::before,
+p.p2textompitem::before {
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+}
+
 ul.p2textompitem li::before {
     content: '•';
     font-size: 1.2em;
@@ -578,7 +598,14 @@ ul.p2textompitem li::before {
     text-align: justify;
 }
 
-.box_geral_mp>p.p2textompitem::before,
+.box_geral_mp>p.p2textompitem::before{
+    content: ''; /*content: '•';*/
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 -12px;
+}
+
 .box_geral_mp>ul.p2textompitem li::before {
     content: '•';
     font-size: 1.2em;
@@ -586,6 +613,7 @@ ul.p2textompitem li::before {
     height: 10px;
     margin: 0 10px 0 -12px;
 }
+
 
 .box_geral_mp>.p2textompitemcont {
     font-family: var(--texto);
@@ -600,7 +628,7 @@ p.p2textompsubitem {
     text-align: justify;
 }
 
-p.p2textompsubitem::before,
+
 ul.p2textompsubitem li::before {
     content: '•';
     color: var(--laranja1);
@@ -609,6 +637,15 @@ ul.p2textompsubitem li::before {
     height: 10px;
     margin: 0 10px 0 0;
 }
+p.p2textompsubitem::before{
+    content: ''; /*content: '•';*/
+    color: var(--laranja1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+}
+
 
 .p2textompsubitem {}
 
@@ -797,13 +834,19 @@ ul.p2textompsubitem li::before {
     font-size: 0.9em;
 }
 
-ul.p3citacaompitem li::before,
-p.p3citacaompitem::before {
+ul.p3citacaompitem li::before{
     content: '•';
     width: 10px;
     height: 10px;
     margin: 0 10px 0 0;
 }
+p.p3citacaompitem::before {
+    content: ''; /*content: '•';*/
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+}
+
 
 
 .p3citacaompsemrecuoletra {
