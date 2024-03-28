@@ -209,7 +209,7 @@ table p {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.orientaTx {}
+.orientatx {}
 
 .p4iconeoed::before {
     content: '';
@@ -274,15 +274,15 @@ header .pag {
 .col2d {}
 
 /* Alinhamento vertical */
-.colTop {
+.coltop {
     align-items: flex-start;
 }
 
-.colCenter {
+.colcenter {
     align-items: center;
 }
 
-.colBottom {
+.colbottom {
     align-items: flex-end;
 }
 
@@ -291,11 +291,11 @@ header .pag {
 }
 
 /* Alinhamento vertical de imagens dentro do parágrafo */
-.imgBottom {
+.imgbottom {
     vertical-align: text-bottom;
 }
 
-.imgTop {
+.imgtop {
     vertical-align: sub;
 }
 
@@ -343,54 +343,54 @@ header .pag {
 
 
 /*👉ESTILOS CONSUMIVEL👈*/
-.linhaResposta1,
-.linhaResposta2,
-.linhaResposta3,
-.linhaResposta4,
-.linhaResposta5 {
+.linharesposta1,
+.linharesposta2,
+.linharesposta3,
+.linharesposta4,
+.linharesposta5 {
     background: url(../images/linha_resposta.svg);
     width: 100%;
     margin: 1em 0;
 }
 
-.linhaResposta1 {
+.linharesposta1 {
     height: 20px;
 }
 
-.linhaResposta2 {
+.linharesposta2 {
     height: 30px;
 }
 
-.linhaResposta3 {
+.linharesposta3 {
     height: 50px;
 }
 
-.linhaResposta4 {
+.linharesposta4 {
     height: 60px;
 }
 
-.linhaResposta5 {
+.linharesposta5 {
     height: 80px;
 
 }
 
-.lacunaRespostaP,
-.lacunaRespostaM,
-.lacunaRespostaG {
+.lacunarespostap,
+.lacunarespostam,
+.lacunarespostag {
     background: url(../images/linha_resposta.svg);
     background-position-y: 20px;
     margin: 0 5px;
 }
 
-.lacunaRespostaP {
+.lacunarespostap {
     padding: 0em 1em;
 }
 
-.lacunaRespostaM {
+.lacunarespostam {
     padding: 0em 2.5em;
 }
 
-.lacunaRespostaG {
+.lacunarespostag {
     padding: 0em 4.5em;
 }
 
@@ -652,7 +652,7 @@ header .pag {
     margin: 1em 0 0.5em 0;
 }
 
-/* FIXME: Este título é o padrão no português */
+
 .p0tit4 {
     background: url(../images/pv_p0tit4p.svg) no-repeat var(--laranja3);
     background-position-x: -6px;
@@ -692,11 +692,11 @@ header .pag {
 .p0tit6negativo {}
 
 /* FIXME: classes provisórias */
-.sectitAtv {
+.sectitatv {
     margin: 2em 0 0.5em 0;
 }
 
-.sectitAtv::before {
+.sectitatv::before {
     content: '';
     background: url(../images/pv_titatividadesbg.svg) top left no-repeat;
     width: 95px;
@@ -706,7 +706,7 @@ header .pag {
     z-index: -3;
 }
 
-.sectitAtv>.atv {
+.sectitatv>.atv {
     background: url(../images/pv_titatividades_bg.svg) no-repeat var(--verde1);
     background-position-y: -23px;
     background-position-x: -20px;
@@ -721,7 +721,7 @@ header .pag {
     max-width: 100%;
 }
 
-.sectitAtv>.anote {
+.sectitatv>.anote {
     background: var(--roxo2);
     border-radius: 0em 1.2em 0 0;
     font-family: var(--texto);
@@ -877,7 +877,7 @@ o2mapagravata2
 }
 
 /* Título Seção */
-.secTits {
+.sectits {
     position: relative;
 }
 
@@ -891,36 +891,7 @@ o2mapagravata2
     padding: 0.2em 1em;
     width: max-content;
     max-width: 100%;
-
-    /*👉background: url(../images/pv_p1sec1tit1.svg) top center no-repeat;
-    background-size: 100%;
-    color: var(--branco);
-    display: flex;
-    font-family: var(--titulo);
-    font-size: var(--peso6);
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 120px;
-    padding: 0 0 0 0;
-    position: absolute;
-    margin: -40px 0 0 50px;
-    z-index: 3;👈*/
 }
-
-/*👉
-.p1sec1tit1>p {
-    background: var(--preto);
-    border-radius: 1em;
-    color: var(--branco);
-    font-family: var(--titulo);
-    font-size: var(--peso7);
-    font-weight: bold;
-    line-height: 1.1em;
-    padding: 0.2em 0;
-    width: 100px;
-    text-align: center;
-}👈*/
 
 .p1sec1tit2 {
     background: var(--verde2);
@@ -1014,15 +985,6 @@ o2mapagravata2
 .p1sec3tit3 {}
 
 .box_aluno .p1sec4tit1 {
-    /*👉background: var(--preto);
-    color: var(--branco);
-    font-family: var(--titulo);
-    font-weight: bold;
-    font-size: var(--peso6);
-    padding: 0.2em 1em;
-    width: max-content;
-    max-width: 100%;👈*/
-
     background: url(../images/pv_p1sec1tit1.svg) top center no-repeat;
     background-size: 100%;
     color: var(--branco);
@@ -2169,11 +2131,11 @@ figure>.p5marcadorcaixa2 {
     margin: 0em 0;
 }
 
-.P5MarcadorCaixa2Negativo {}
+.p5marcadorcaixa2negativo {}
 
 /* ABERTURA DE CAPITULO */
 /* FIXME: classe temporária */
-.o0boxaberturaAtvTit {
+.o0boxaberturaatvtit {
     background: var(--preto);
     border-radius: 3em;
     color: var(--branco);
@@ -2381,7 +2343,7 @@ dd sup {
 }
 
 /*👉 ESTILOS DE OBJETOS
-.o0boxaberturaAtv
+.o0boxaberturaatv
 .o0aberturaobjbox
 .o4boxinfo
 .o4dicabox
@@ -2433,16 +2395,16 @@ dd sup {
     position: relative;
 }
 
-.o0boxaberturaAtv,
+.o0boxaberturaatv,
 .o0aberturaobjbox {
     padding: 2em 1em 1em 2em;
 }
 
-.imgAbertura {
+.imgabertura {
     position: relative;
 }
 
-.imgAbertura>.p4legenda {
+.imgabertura>.p4legenda {
     background: var(--laranja2);
     
     border-radius: 2em 0 0 0;
@@ -2452,7 +2414,7 @@ dd sup {
     z-index: 2;
     margin: -3em 0 0 0;
 }
-.imgAbertura>.p4legenda::before{
+.imgabertura>.p4legenda::before{
     background-image: none;
 }
 
@@ -2467,13 +2429,13 @@ dd sup {
     margin: -3em 0 0 0;
 }
 
-.o0aberturaatvboxTit {}
+.o0aberturaatvboxtit {}
 
 .o0aberturaatvbox>.p2textomarcadorsemrecuo {
     margin: 0.5em 0 0.5em 2em;
 }
 
-.o0boxaberturaAtv::before {
+.o0boxaberturaatv::before {
     content: '';
     background: url(../images/pv_boxaberturaatv_bg.svg) top left no-repeat;
     background-size: 100%;
@@ -2765,26 +2727,6 @@ dd sup {
     margin: 1em 0;
 }
 
-/* 
-.o4dicabox{     
-    margin: 0 0 1em 0;
-}
-.o4dicabox>.p1box1tit{
-    background: url(../images/pv_o4dicabox.svg) no-repeat var(--preto);
-    background-size: 35px;
-    background-position-x: -15px ;
-    background-position-y: -10px ;
-    border-radius: 1em 1em 0 0;
-    width: max-content;
-    max-width: 100%;
-    padding: 0.2em 1em 0.2em 1.5em;
-}
-.o4dicabox>.box{
-    background: var(--verde3);
-    border-radius: 0 2em 0 0 ;   
-    padding: 1em;
-} */
-
 /* BOX JORNAL */
 .o3jornalfundo {
     background: linear-gradient(24deg, rgba(211, 219, 212, 1) 35%, rgba(236, 241, 237, 1) 100%);
@@ -3022,11 +2964,11 @@ o4avaliacaobox
 }
 
 
-.O0box02 {
+.o0box02 {
     margin: 1em 0;
 }
 
-.O0box02>.p1box1tit {
+.o0box02>.p1box1tit {
     background: url(../images/pv_box002_bgbranco.svg) no-repeat var(--preto);
     background-size: 60px;
     background-position-x: -30px;
@@ -3038,7 +2980,7 @@ o4avaliacaobox
     max-width: 100%;
 }
 
-.O0box02>.box {
+.o0box02>.box {
     background: url(../images/pv_box002_bgroxo.svg) no-repeat var(--branco);
     background-size: 400px;
     background-position-x: -18px;
@@ -3049,11 +2991,11 @@ o4avaliacaobox
 }
 
 
-.O4boxmateriais {
+.o4boxmateriais {
     margin: 1em 0;
 }
 
-.O4boxmateriais>.p1box2tit {
+.o4boxmateriais>.p1box2tit {
     background: var(--verde2);
     border-radius: 1em 1em 0 0;
     padding: 0.2em 1em;
@@ -3061,7 +3003,7 @@ o4avaliacaobox
     max-width: 100%;
 }
 
-.O4boxmateriais>.p1box2tit::after {
+.o4boxmateriais>.p1box2tit::after {
     background: url(../images/pv_boxmeteriais_bg.svg) no-repeat;
     content: '';
     width: 50px;
@@ -3071,7 +3013,7 @@ o4avaliacaobox
     z-index: -10;
 }
 
-.O4boxmateriais>.box {
+.o4boxmateriais>.box {
     background: var(--laranja3);
     border-radius: 0 0.5em 0.5em 0.5em;
     padding: 0.5em 1em;
@@ -3079,7 +3021,7 @@ o4avaliacaobox
 
 
 
-.O0boxconstruindo>.p1box2tit {
+.o0boxconstruindo>.p1box2tit {
     background: var(--verde2);
     border-radius: 1em 1em 0 0;
     padding: 0.2em 1em;
@@ -3751,17 +3693,6 @@ o5email2
     margin: 2em 0;
 }
 
-/*👉.o5prancheta::before{
-    background: url(../images/pv_prancheta.svg) no-repeat;
-    background-size: 100%;
-    content: '';
-    width: 134px;
-    height: 51px;
-    position: absolute;
-    margin:-6em 0 0 200px;
-
-}👈*/
-
 
 /* VERBETE DICIONÁRIO */
 .o5verbetedicionario {
@@ -3997,7 +3928,7 @@ o5email2
 
 
     /* SEÇÃO MEDIA EM FOCO */
-    .secTits {
+    .sectits {
         position: static;
     }
 
@@ -4021,16 +3952,7 @@ o5email2
 
 
 
-    .o0sec4>.secTits>.p1sec4tit1 {
-        /*👉background: var(--preto);
-        color: var(--branco);
-        font-family: var(--titulo);
-        font-weight: bold;
-        font-size: var(--peso6);
-        padding: 0.2em 1em;
-        width: max-content;
-        max-width: 100%;👈*/
-
+    .o0sec4>.sectits>.p1sec4tit1 {
         background: url(../images/pv_p1sec1tit1.svg) top center no-repeat;
         background-size: 100%;
         color: var(--branco);
