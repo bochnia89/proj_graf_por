@@ -516,7 +516,44 @@ header .pag {
     margin: 1em 0;
 }
 
+.p1sumariooedpv::before {
+    content: '';
+    background: url(../images/icone_oed.svg) top left no-repeat;
+    background-size: 100%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin: -4px 0 0 -53px;
+}
 
+.p1sumariooedpv {
+    color: #016173;
+    background: var(--branco);
+    font-family: var(--titulo);
+    font-size: var(--pesoPadrao);
+    font-weight: bold;
+    border: 2px solid #01778c;
+    border-radius: 0.5em;
+    width: max-content;
+    max-width: 80%;
+    padding: 0.2em 1em;
+    margin: 1em 0 1em 2.2em;
+}
+
+.p1sumariooedpeso1>a{ 
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+.p1sumariooedpeso2 a{
+    color: var(--oed);
+}
+.p1sumariooedpeso1{
+    margin: 0.6em 0 0 0;
+}
+.p1sumariooedpeso2{
+    margin:  0 0 0 1em;
+}
 /*👉=================== ESTILOS MIOLO ================================👈*/
 /* TÍTULOS  */
 .tit1 {
@@ -2406,6 +2443,7 @@ dd sup {
 .o1boxfundoazul1
 .o1boxfundoazul2
 .o1boxfundoaroxo1 TODO: Sugerir novo objeto
+.o1contornoimagem
 .o2mapabox TODO: Sugerir novo objeto
 .o2graficobox TODO: Sugerir novo objeto
 .o2boxesquema
@@ -2485,7 +2523,9 @@ dd sup {
 
 }
 
-
+.o1contornoimagem{
+    border: 1px solid var(--preto);
+}
 
 .o3fiocitacao {
     border-left: 2px solid var(--verde1);
