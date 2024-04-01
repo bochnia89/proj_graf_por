@@ -130,6 +130,10 @@ strong em {
     margin-left: -8px;
 }
 
+.url_para_encurtar{
+    word-break: break-all;
+}
+
 /*👉CLASSES PARA DIAGRAMAR👈*/
 /* COLUNAS E ALINHAMENTO */
 .col2 {
