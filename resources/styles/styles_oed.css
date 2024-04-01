@@ -261,6 +261,7 @@ strong em {
 .credito {
     /*👉display: flex;👈*/
     /*👉flex-direction: row-reverse;👈*/
+    margin: 0.5em 0 0 0 ;
 }
 
 /*👉classes adicionadas para OED vídeo e áudio👈*/
