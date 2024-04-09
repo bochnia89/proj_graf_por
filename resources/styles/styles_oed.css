@@ -299,7 +299,7 @@ strong em {
 }
 
 /*👉Versão geral👈*/
-/*👉.descricao_longaOED summary::before {
+.descricao_longaOED summary::before {
     background: url(../images/ico_acessibilidade.svg);
     background-size: 100%;
     width: 30px;
@@ -307,7 +307,7 @@ strong em {
     position: absolute;
     margin: -3px 0 0 -48px;
     content: '';
-}👈*/
+}
 
 .descricao_longaOED div {
 
