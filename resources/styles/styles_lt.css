@@ -24,6 +24,7 @@ body {
 main {
     max-width: 85ch;
     margin: 0 auto;
+   
 }
 
 section {
@@ -246,6 +247,11 @@ header .pag {
     width: max-content;
     page-break-before: always;
     page-break-after: avoid;
+}
+
+.alinhamarcador{
+    width: calc(100% - 3em) !important; 
+    margin-left:3em !important;
 }
 
 /*👉CLASSES PARA DIAGRAMAR👈*/
@@ -484,7 +490,17 @@ header .pag {
     margin: 0 0 0 2em;
 }
 .p1sumariopeso4{
-    margin: 0 0 0 3.6em;
+    margin: 0 0 0 1em;
+}
+.p1sumariopeso4>a, .p1sumariopeso5>a,
+.p1sumariopeso6>a{
+    font-weight: 500;
+}
+.p1sumariopeso5{
+    margin: 0 0 0 1em;
+}
+.p1sumariopeso6{
+    margin: 0 0 0 1em;
 }
 .p1sumarioextrapeso1 a{
     color: var(--verde1);
@@ -493,13 +509,13 @@ header .pag {
 }
 
 .secao_renomear{
-    background: url(../images/pv_secsumario.svg)  no-repeat;
+    /*👉background: url(../images/pv_secsumario.svg)  no-repeat;👈*/
     background-position-y:9px ;
     padding: 0 0 0 1.2em;
     margin: 0 0 0 0.6em;
 }
 .secao_renomear a{
-    color: var(--verde1);
+    color: var(--preto);
     font-family: var(--titulo);
     font-weight: bold;
 }
@@ -600,6 +616,7 @@ header .pag {
     width: max-content;
     max-width: 75%;
     height: max-content;
+    line-height: 1.5em;
 }
 
 .p0tit1numpv {
@@ -668,6 +685,7 @@ header .pag {
     padding: 0.2em 1em 0.3em 0.8em;
     width: max-content;
     max-width: 100%;
+    line-height: 1.5em;
 }
 
 .p0tit3::before {
@@ -678,12 +696,14 @@ header .pag {
     height: 30px;
     position: absolute;
     margin: 4px 0 0 -24px;
+    
 }
 
 .p0tit4 {
     font-family: var(--titulo);
     font-weight: bold;
     font-size: var(--peso4);
+    line-height: 1.5em;
     width: max-content;
     max-width: 100%;
     margin: 1em 0 0.5em 0;
@@ -1163,6 +1183,11 @@ o2mapagravata2
 .p2textosemrecuoitem,
 .p2textosemrecuoitemcont,
 .p2textosemrecuonum,
+.p2textosemrecuonumcont,
+.p2textosemrecuonumitem,
+.p2textosemrecuonumitemcont,
+.p2textosemrecuonumletra,
+.p2textosemrecuonumletracont,
 .p2texto,
 .p2textoitem,
 .p2textoitemcont,
@@ -1250,6 +1275,34 @@ p.p2textosemrecuoitem::before {
 
 .p2textosemrecuonum {
     margin: 0.5em 0 0.5em 28px;
+}
+
+.p2textosemrecuonumcont{
+    margin: 0.5em 0 0.5em 28px;
+}
+ul.p2textosemrecuonumitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 3em;
+}
+p.p2textosemrecuonumitem{
+    margin: 0.5em 0 0.5em 3em;
+}
+p.p2textosemrecuonumitem::before{
+content: ''; /*content: '•';*/
+font-size: 1.2em;
+width:10px ;
+height:10px ;
+position: absolute;
+margin:0 0 0 -14px ;
+}
+.p2textosemrecuonumitemcont{
+    margin: 0.5em 0 0.5em 3em;
+}
+.p2textosemrecuonumletra{
+    margin: 0.5em 0 0.5em 3.5em;
+}
+.p2textosemrecuonumletracont{
+    margin: 0.5em 0 0.5em 3.5em;
 }
 
 .p2textomarcadorsemrecuo {
@@ -1424,11 +1477,11 @@ p.p2textomarcadorsubitem {
 }
 
 .p2questaoletra {
-    margin: 0.5em 0 0.5em 1.5em;
+    margin: 0.5em 0 0.5em 2em;
 }
 
 .p2questaoletracont {
-    margin: 0.5em 0 0.5em 1.5em;
+    margin: 0.5em 0 0.5em 2em;
 }
 
 ul.p2questaoletraitem {
@@ -1697,7 +1750,7 @@ p.p2atvletrasubitem::before {
 .p3intermediariosemrecuoletra,
 .p3intermediariosemrecuoletracont {
     font-family: var(--texto);
-    font-size: var(--pesoPadrao);
+    font-size: var(--pesoIntermediario);
     text-align: left;
     max-width: 100%;
 }
@@ -1784,11 +1837,11 @@ p.p3intermediariosemrecuoitem::before {
 }
 
 .p3intermediariosemrecuoletra {
-    margin: 0.5em 0 0.5em 1em;
+    margin: 0.5em 0 0.5em 2.3em;
 }
 
 .p3intermediariosemrecuoletracont {
-    margin: 0.5em 0 0.5em 1em;
+    margin: 0.5em 0 0.5em 2.3em;
 }
 
 
@@ -1889,12 +1942,13 @@ blockquote.p3citacaoitem::before {
 }
 
 .p3citacaoletra {
-    margin: 0.5em 0 0.5em 1.4em;
+    margin: 0.5em 0 0.5em 2em;
 }
 
 .p3citacaoletracont {
-    margin: 0.5em 0 0.5em 1.4em;
+    margin: 0.5em 0 0.5em 2em;
 }
+
 
 .p3citacaonumero {
     text-align: justify;
@@ -2101,6 +2155,17 @@ p.p4cuidadodicaitem::before{
 
 
 /* Marcadores */
+.p5marcadorromano{
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -40px;
+    width: 35px;
+    padding: 0 4px;
+}
 .p5marcador {
     background: var(--preto);
     color: var(--branco);
@@ -2340,15 +2405,42 @@ dd sup {
 
 .c4glossariodestaqueitalico {}
 
+/* Geral */
+/* 
+c0destaqueletra
+c0destaqueletracitacao
+c0destaquenumero
+c0destaquenumerocitacao 👉Estilo de caracter utilizado na citacao 
+c0destaqueromano
+c0destaquequestaonumero
+c0destaquesomatoria
+c0bulletnumitem
+c0bulletsubitem  👉Estilo de caracter utilizado no manual em U 
+c0destaquecap 👉Estilo de caracter utilizado no sumário mp  
+c0destaquesecao 👉Estilo de caracter utilizado no sumário mp 
+*/
+
+.c0destaqueletra,
+.c0destaqueletracitacao,
+.c0destaquenumero,
+.c0destaquenumerocitacao,
+.c0destaqueromano,
+.c0destaquequestaonumero,
+.c0destaquesomatoria,
+.c0bulletnumitem,
+.c0bulletsubitem,
+.c0destaquecap,  
+.c0destaquesecao{
+    
+}
 .c0destaqueletra {
     font-weight: bold;
-    width: 24px;
+    width: 30px;
     height: 24px;
     position: absolute;
-    margin: 0 0 0 -26px;
+    margin: 0 0 0 -34px;
     text-align: center;
 }
-
 .c0destaquenumero {
     font-weight: bold;
     width: 24px;
@@ -2357,22 +2449,19 @@ dd sup {
     margin: 0 0 0 -26px;
     text-align: center;
 }
-
 .c0destaquequestaonumero {
     color: var(--verde1);
     font-family: var(--titulo);
     font-weight: bold;
 }
-
 .c0destaqueromano {
     font-weight: bold;
-    width: 36px;
+    width: 40px;
     height: 36px;
     position: absolute;
-    margin: 0 0 0 -40px;
+    margin: 0 0 0 -45px;
     text-align: right;
 }
-
 .c0destaqueletracitacao{
     font-weight: bold;
     width: 24px;
@@ -2381,11 +2470,32 @@ dd sup {
     margin: 0 0 0 -26px;
     text-align: center;
 }
-
-.c0destaquesomatoria {}
-
-.c0bulletnumitem {}
-
+.c0destaquesomatoria {
+    font-weight: 550;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 -30px;
+}
+.c0bulletnumitem {
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -12px;
+    font-size: 1.2em;
+  
+}
+.c0destaquecap{
+    background: var(--vermelho1);
+    color: var(--branco);
+    padding:0 0.5em  0.2em 0.5em;
+}
+.c0destaquesecao{
+    background: var(--preto);
+    color: var(--branco);
+    padding:0 0.5em  0.2em 0.5em;
+}
 .c0destaquenumerocitacao {
     font-weight: bold;
     position: absolute;
@@ -2393,7 +2503,6 @@ dd sup {
     height:20px;
     margin: 0 0 0 -30px;
 }
-
 /* Estilo de caracter utilizado no manual em U */
 .c0bulletsubitem {}
 .c5destaqueverbetedicionario{
@@ -3449,6 +3558,37 @@ o5verbetedicionario
 o5email
 o5email2
 👈*/
+.o5papeleta1>.p5marcador, 
+.o5papeleta2>.p5marcador{
+    margin: -1.1em 0 0 -2.5em;
+}
+.o5bilhete2>.p5marcador,
+.o5bilhete2>.p5marcador{
+    margin: -1.6em 0 0 -3.2em;
+}
+.o5postit1>.p5marcador,
+.o5postit2>.p5marcador{
+    margin: -1.3em 0 0 -3.2em;
+}
+.o5nota1>.p5marcador, 
+.o5nota2>.p5marcador,
+.o5nota3>.p5marcador{
+    margin: -1.3em 0 0 -3.2em;
+}
+
+.o5papeleta1 {
+    border: 1px solid var(--roxo1);
+    background: var(--branco);
+    box-shadow: 10px 6px 0px var(--roxo3);
+    padding: 1em;
+    margin: 1em 0;
+    height: max-content;
+    width: max-content;
+    min-height: 50px;
+    max-width: 100%;
+
+}
+/* VERSÃO DE PARIDADE VISUAL o5papeleta2
 .o5papeleta1 {
     margin: 2em 0;
     width: 350px;
@@ -3477,14 +3617,26 @@ o5email2
     max-width: 100%;
     min-height: 250px;
 }
+*/
 
+.o5papeleta2 {
+    border: 1px solid var(--vermelho1);
+    background: var(--branco);
+    box-shadow: 10px 6px 0px var(--vermelho3);
+    padding: 1em;
+    height: max-content;
+    width: max-content;
+    min-height: 50px;
+    max-width: 100% !important;
+    margin: 1em 0;
+}
+
+/* VERSÃO DE PARIDADE VISUAL o5papeleta2
 .o5papeleta2 {
     margin: 2em 0;
     width: 350px;
     min-height: 250px;
 }
-
-
 .o5papeleta2>.camada1 {
     border: 1px solid var(--vermelho1);
     background: var(--branco);
@@ -3493,7 +3645,6 @@ o5email2
     width: 350px;
     min-height: 250px;
     z-index: 3;
-
 }
 
 .o5papeleta2>.camada2 {
@@ -3504,15 +3655,18 @@ o5email2
     width: 350px;
     min-height: 250px;
 }
+*/
 
 /* Bilhete */
 .o5bilhete1 {
     padding: 1.4em;
     margin: 1em 0;
     border: 4px solid var(--verde2);
-    width: 350px;
+    height: max-content;
+    min-height: 50px;
+    width: max-content;
+    min-width: 150px;
     max-width: 100%;
-    min-height: 200px;
 }
 
 .o5bilhete1::before {
@@ -3552,9 +3706,11 @@ o5email2
     padding: 1.4em;
     margin: 1em 0;
     border: 4px solid var(--vermelho2);
-    width: 350px;
+    height: max-content;
+    min-height: 50px;
+    width: max-content;
+    min-width: 150px;
     max-width: 100%;
-    min-height: 200px;
 }
 
 .o5bilhete2::before {
@@ -3569,14 +3725,19 @@ o5email2
 }
 
 
+
+
 /* Post-it */
 .o5postit1 {
     background: var(--laranja3);
     box-shadow: -3px 3px 0px var(--laranja2);
-    padding: 1em;
+    padding: 1.2em 1.5em;
     margin: 1.5em 0;
-    width: 350px;
-    min-height: 200px;
+    height: max-content;
+    min-height: 50px;
+    width: max-content;
+    min-width: 150px;
+    max-width: 100%;
 }
 
 .o5postit1::before {
@@ -3586,17 +3747,21 @@ o5email2
     width: 63px;
     height: 22px;
     position: absolute;
-    margin: -1.5em 0 0 8em;
+    margin: -1em 0 0 -2.54em;
     z-index: 10;
+    transform: rotate(-45deg); 
 }
 
 .o5postit2 {
     background: var(--verde3);
     box-shadow: -3px 3px 0px var(--verde2);
-    padding: 1em;
+    padding: 1.2em 1.5em;
     margin: 1.5em 0;
-    width: 350px;
-    min-height: 200px;
+    height: max-content;
+    min-height: 50px;
+    width: max-content;
+    min-width: 150px;
+    max-width: 100%;
 }
 
 .o5postit2::before {
@@ -3606,11 +3771,37 @@ o5email2
     width: 63px;
     height: 22px;
     position: absolute;
-    margin: -1.5em 0 0 8em;
+    margin: -1em 0 0 -2.54em;
+    z-index: 10;
+    transform: rotate(-45deg); 
+}
+/* Notas */
+.o5nota1 {
+    background: var(--verde3);
+    box-shadow: 10px 6px 0px var(--verde2);
+    padding: 1.5em;
+    margin: 2.5em 0;
+    min-width: 150px;
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+    min-height:50px;
+}
+
+.o5nota1::before {
+    background: url(../images/pv_bilhete1.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    margin: -2.2em 0 0 -0.5em;
     z-index: 10;
 }
 
-/* Notas */
+
+
+/* Versão com paridade visual
 .o5nota1 {
     margin: 2.5em 0;
     width: 350px;
@@ -3632,7 +3823,7 @@ o5email2
 .o5nota1>.camada1 {
     background: var(--vermelho3);
     padding: 1em;
-    position: absolute;
+    position: absolute;             
     width: 350px;
     max-width: 100%;
     min-height: 250px;
@@ -3640,7 +3831,7 @@ o5email2
 
 }
 
-.o5nota1>.camada2 {
+.o5nota1>.camada2 { 
     background: var(--vermelho2);
     position: absolute;
     z-index: 2;
@@ -3650,7 +3841,32 @@ o5email2
     min-height: 250px;
 }
 
+*/
 
+.o5nota2{
+    background: var(--vermelho3);
+    box-shadow: 10px 6px 0px var(--vermelho2);
+    padding: 1.5em;
+    margin: 2.5em 0;
+    min-width: 150px;
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+    min-height:50px;
+}
+
+.o5nota2::before {
+    background: url(../images/pv_bilhete2.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    margin: -2.2em 0 0 -0.5em;
+    z-index: 10;
+}
+
+/* Versão com paridade visual
 
 .o5nota2 {
     margin: 2.5em 0;
@@ -3689,6 +3905,20 @@ o5email2
     width: 350px;
     max-width: 100%;
     min-height: 250px;
+}
+
+*/
+
+.o5nota3{
+    background: var(--cinza);
+    box-shadow: 10px 6px 0px var(--vermelho2);
+    padding: 1.5em;
+    margin: 2.5em 0;
+    min-width: 150px;
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+    min-height:50px;
 }
 
 
@@ -3730,8 +3960,8 @@ o5email2
     background: url(../images/ico_quadrobranco.svg) bottom right no-repeat var(--branco);
     background-position-x: 98%;
     background-position-y: 99%;
-    border: 6px solid var(--roxo1);
-    border-bottom: 8px solid var(--roxo1);
+    border: 6px solid var(--laranja2);
+    border-bottom: 8px solid var(--laranja2);
     padding: 1em;
     margin: 1em 0;
     min-height: 300px;
@@ -3860,6 +4090,17 @@ o5email2
     margin: 1em 0;
 }
 
+.o5emailrecorte>.p5marcador {
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    margin: -1.5em 0 0 -2.5em;
+    padding: 3px 0 0 0;
+    width: 25px;
+  }
 
 
 
@@ -4020,11 +4261,6 @@ o5email2
         padding: 0.2em 1em 0.4em 140px;
     }
 
-
-
-
-
-
     .o0sec4>.sectits>.p1sec4tit1 {
         background: url(../images/pv_p1sec1tit1.svg) top center no-repeat;
         background-size: 100%;
@@ -4054,7 +4290,30 @@ o5email2
 
 
 
+    .p1referenciasbibliotit1 {
+        background: var(--preto);
+        color: var(--branco);
+        font-family: var(--titulo);
+        font-size: var(--peso5);
+        font-weight: bold;
+        width: max-content;
+        max-width: 100%;
+        padding: 0.1em 1em 0.4em 1em;
+        margin: 1em 0 0 0em;
+      }
 
+      .p1sec4tit2 {
+        background: var(--verde2);
+        border-radius: 0 4em 4em 0;
+        color: var(--preto);
+        font-family: var(--titulo);
+        font-size: var(--pesoPadrao);
+        width: max-content;
+        max-width: 60%;
+        margin: 0 0 0 110px;
+        position: absolute;
+        padding: 0.2em 1em 0.4em 1.5em;
+      }
 
 }
 
