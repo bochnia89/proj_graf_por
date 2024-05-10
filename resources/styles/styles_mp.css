@@ -12,7 +12,7 @@
     padding: 2em 2em 1em 2.5em;
 }
 
-.box_geral_mp>.p0tit1 {
+.d0box_geralmp>.p0tit1 {
     background: var(--laranja2);
     font-size: var(--pesoPadrao);
     font-weight: bold;
@@ -24,7 +24,7 @@
     height: max-content;
 }
 
-.box_geral_mp>.p0tit1::before {
+.d0box_geralmp>.p0tit1::before {
     background: url(../images/pv_aberturacapmpg.svg) no-repeat;
     background-size: 100%;
     content: '';
@@ -35,7 +35,7 @@
 }
 
 
-.box_geral_mp>.p1sec4tit1 {
+.d0box_geralmp>.p1sec4tit1 {
     background: var(--preto);
     border-radius: 0 0 1.5em 1.5em;
     color: var(--branco);
@@ -48,7 +48,7 @@
     max-width: 100%;
 }
 
-.box_geral_mp>.p1sec4tit1::after {
+.d0box_geralmp>.p1sec4tit1::after {
     background: url(../images/pv_midiaemfocompg.svg) no-repeat;
     background-size: 100%;
     content: '';
@@ -59,7 +59,7 @@
 }
 
 /* para saber mais */
-.box_geral_mp>.o0parasabermais {
+.d0box_geralmp>.o0parasabermais {
     background: url(../images/pv_boxsaibamais_bg1.svg) no-repeat var(--preto);
     background-position-x: 120px;
     border-radius: 1em 1em 0 0;
@@ -73,7 +73,7 @@
 }
 
 /* box info box complementar */
-.box_geral_mp .o4boxinfo {
+.d0box_geralmp .o4boxinfo {
     background: url(../images/pv_elemento_horizontalbranco.svg) no-repeat var(--roxo2);
     background-size: 40px;
     background-position-x: -20px;
@@ -88,7 +88,7 @@
     max-width: 100%;
 }
 
-.box_geral_mp .o4boxinfo::before {
+.d0box_geralmp .o4boxinfo::before {
     content: '';
     background: url(../images/pv_elemento_horizontalroxo.svg) no-repeat;
     background-size: auto;
@@ -101,16 +101,16 @@
 }
 
 
-.box_geral_mp .p1sec5tit1 {
+.d0box_geralmp .p1sec5tit1 {
     margin: 1.5em 0 0.5em 0px;
 }
 
-.box_geral_mp .p1sec3tit1 {
+.d0box_geralmp .p1sec3tit1 {
     margin: 1.5em 0 0.5em 0;
     font-size: var(--pesoPadrao);
 }
 
-.box_geral_mp .p1sec3tit1::before {
+.d0box_geralmp .p1sec3tit1::before {
     content: '';
     background: url(../images/pv_boxverifique.svg) no-repeat;
     background-size: auto;
@@ -123,7 +123,7 @@
 }
 
 
-.box_geral_mp .p1sec2tit1 {
+.d0box_geralmp .p1sec2tit1 {
     background: var(--laranja3);
     border-radius: 0 0 1em 1em;
     font-size: var(--pesoPadrao);
@@ -133,7 +133,7 @@
     margin: 1em 0 0.5em 0;
 }
 
-.box_geral_mp .p1sec2tit1::after {
+.d0box_geralmp .p1sec2tit1::after {
     background: url(../images/pv_secconexoesmpg.svg) no-repeat;
     background-size: 100%;
     content: '';
@@ -143,13 +143,13 @@
     margin: -10px 0 0 0;
 }
 
-.box_geral_mp .p1sugestcomptit1 {
+.d0box_geralmp .p1sugestcomptit1 {
     font-size: var(--peso6);
     margin: 1.5em 0 2em 0;
 }
 
 
-.box_geral_mp .p1sugestcomptit1 {
+.d0box_geralmp .p1sugestcomptit1 {
     background: var(--preto);
     color: var(--branco);
     font-family: var(--titulo);
@@ -163,7 +163,7 @@
     z-index: 10;
 }
 
-.box_geral_mp .p1sugestcomptit1::before {
+.d0box_geralmp .p1sugestcomptit1::before {
     background: url(../images/pv_sugestcomp_bg.svg) no-repeat;
     background-size: 100%;
     content: '';
@@ -174,7 +174,7 @@
     z-index: -10;
 }
 
-.box_geral_mp .p0tit1gab {
+.d0box_geralmp .p0tit1gab {
     background: var(--verde1);
     color: var(--branco);
     font-family: var(--titulo);
@@ -187,7 +187,7 @@
     margin-top: 1em;
 }
 
-.box_geral_mp .p1referenciasbibliotit1::before {
+.d0box_geralmp .p1referenciasbibliotit1::before {
     background: url(../images/pv_referenciasbibliocoment.svg) no-repeat;
     background-size: 100%;
     content: '';
@@ -198,7 +198,7 @@
     z-index: -2;
 }
 
-.box_geral_mp .p1referenciasbibliotit1 {
+.d0box_geralmp .p1referenciasbibliotit1 {
     background: var(--preto);
     color: var(--branco);
     font-family: var(--titulo);
@@ -398,8 +398,8 @@
 
 .p1box2tit {}
 
-.box_professor_mp>.p1box1tit,
-.box_geral_mp>.p1box1tit {
+.d0box_especificompu>.p1box1tit,
+.d0box_geralmp>.p1box1tit {
     background: var(--laranja2);
     color: var(--preto);
     font-family: var(--titulo);
@@ -411,8 +411,8 @@
     margin: 1em 0 0.5em 0;
 }
 
-.box_professor_mp>.p1box2tit,
-.box_geral_mp>.p1box2tit {
+.d0box_especificompu>.p1box2tit,
+.d0box_geralmp>.p1box2tit {
     background: var(--verde2);
     color: var(--preto);
     font-family: var(--titulo);
@@ -644,17 +644,17 @@ ul.p2textompitem li::before {
 
 
 /* Manual Geral */
-.box_geral_mp>ul.p2textompitem {
+.d0box_geralmp>ul.p2textompitem {
     margin: 0.5em 0 0.5em 1em;
     text-align: justify;
 }
 
-.box_geral_mp>p.p2textompitem {
+.d0box_geralmp>p.p2textompitem {
     margin: 0.5em 0 0.5em 1em;
     text-align: justify;
 }
 
-.box_geral_mp>p.p2textompitem::before{
+.d0box_geralmp>p.p2textompitem::before{
     content: ''; /*content: '•';*/
     font-size: 1.2em;
     width: 10px;
@@ -662,7 +662,7 @@ ul.p2textompitem li::before {
     margin: 0 10px 0 -12px;
 }
 
-.box_geral_mp>ul.p2textompitem li::before {
+.d0box_geralmp>ul.p2textompitem li::before {
     content: '•';
     font-size: 1.2em;
     width: 10px;
@@ -671,7 +671,7 @@ ul.p2textompitem li::before {
 }
 
 
-.box_geral_mp>.p2textompitemcont {
+.d0box_geralmp>.p2textompitemcont {
     font-family: var(--texto);
     font-size: var(--pesoPadrao);
     text-align: justify;
@@ -797,7 +797,7 @@ p.p2textompsubitem::before{
 /* Textos Intermediários */
 .p3intermediariomptit {}
 
-.box_geral_mp>.p3intermediariomptit {
+.d0box_geralmp>.p3intermediariomptit {
     font-family: var(--titulo);
     font-weight: 700;
     font-size: var(--peso6);
@@ -808,7 +808,7 @@ p.p2textompsubitem::before{
 
 .p3intermediariomp {}
 
-.box_geral_mp>.p3intermediariomp {
+.d0box_geralmp>.p3intermediariomp {
     text-indent: 1.5em;
     text-align: justify;
     font-family: var(--texto);

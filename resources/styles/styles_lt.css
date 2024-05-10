@@ -171,12 +171,12 @@ table p {
 
 .pag {}
 
-.box_aluno {
+.d0box_aluno {
     padding: 0.5em 0 1em 0;
 }
 
 
-.box_professor_mp {
+.d0box_especificompu {
     background: var(--manualu);
     padding: 0 1em 1em 1em;
 }
@@ -195,7 +195,7 @@ table p {
 
 .creditoimagem {}
 
-.creditoimagemResposta {}
+.p4credimagemresposta{}
 
 .creditoimagemPage {}
 
@@ -1041,7 +1041,7 @@ o2mapagravata2
 
 .p1sec3tit3 {}
 
-.box_aluno .p1sec4tit1 {
+.d0box_aluno .p1sec4tit1 {
     background: url(../images/pv_p1sec1tit1.svg) top center no-repeat;
     background-size: 100%;
     color: var(--branco);
@@ -4199,7 +4199,7 @@ o5email2
         margin: 0 10px;
     }
 
-    .box_aluno {
+    .d0box_aluno {
         padding: 0.5em 0 1em 0;
     }
 
