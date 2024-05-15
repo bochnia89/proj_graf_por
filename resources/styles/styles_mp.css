@@ -321,17 +321,101 @@
 
 /*👉=========== TÍTULOS ESPECÍFICOS =============👈*/
 /* Sumário */
-.p1sumariomppeso1 {}
 
+.p1sumariomppeso1{}
 .p1sumariomppeso2 {}
-
 .p1sumariomppeso3 {}
-
 .p1sumariomppeso4 {}
-
 .p1sumariomppeso5 {}
-
 .p1sumariompfinais {}
+
+.p1sumariomppeso1{
+    margin: 1em 0 0 0;
+}
+.p1sumariomppeso2::before{
+background: url(../images/pv_p0tit2mp.svg) no-repeat;
+background-size: 100%;
+content: '';
+width: 12px;
+height:  25px;
+position: absolute;
+margin: 2px 0 0 -1em ;
+}
+.p1sumariomppeso3::before{
+    background: url(../images/pv_p0tit3mp.svg) no-repeat;
+    background-size: 100%;
+    content: '';
+    width: 12px;
+    height:  25px;
+    position: absolute;
+    margin: 2px 0 0 -1em ;
+    }
+.p1sumariomppeso1>a{
+    background:var(--laranja3);
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding:0.2em 0.5em;
+}
+.p1sumariomppeso2>a {
+    font-family: var(--titulo);
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.p1sumariomppeso3>a {
+    font-family: var(--titulo);
+    color: var(--preto);
+}
+
+.p1sumariomppeso2{
+    margin: 0 0 0 1.5em;
+}
+.p1sumariomppeso3{
+    margin: 0 0 0 1.5em;
+}
+.p1sumariompextrapeso>a>.c0destaquecapmp{
+    background: var(--vermelho1);
+    color: var(--branco);
+    padding: 0.2em 0.5em;
+}
+.d0box_geralmp .p1sumariompextrapeso{
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.box_geral_mp .p1sumariopeso4{
+    margin: 0 0 0 1em;
+}
+.p1sumarioextrapeso1 a{
+    color: var(--verde1);
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+
+.p1sumariompextrapeso1 a{
+    color: var(--preto);
+}
+.p1sumariompextrapeso1{
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-weight: bold;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.p1sumariompextrapeso2{
+    color: var(--preto);
+    font-family: var(--titulo);
+    font-weight: bold;
+    margin: 0.5em 0 0.5em 1.5em;
+}
+.c0destquecapsummp{
+    background: var(--vermelho1);
+    color: var(--branco);
+    padding: 0.1em 0.4em;
+    margin: 0 0.5em 0 0;
+}
+
 
 /* Tabelas e Quadros */
 .p1tabelatit {}
@@ -1058,6 +1142,8 @@ c0bulletsubitemmp
 .c3idiomaitalico {}
 
 .c3idiomabolditalico .c4ordinal {}
+
+
 
 /*MEDIA QUERY*/
 /*👉Versão Mobile Cel👈*/

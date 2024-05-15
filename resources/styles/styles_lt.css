@@ -2336,6 +2336,8 @@ figure>.p5marcadorcaixa2 {
     font-style: italic;
 }
 
+.c3idiomasimuladorhiperlink{}
+
 .c3idiomaresposta {
     color: var(--corprof);
     background: var(--vermelho2);
