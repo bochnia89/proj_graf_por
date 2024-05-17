@@ -400,6 +400,47 @@ header .pag {
     padding: 0em 4.5em;
 }
 
+
+/*👉 PAGE CRÉDITOS / FICHA 👈*/ 
+/*
+d1pagecreditos
+d1nomeautor
+d1cargoresponsavel1
+d1cargoresponsavel2
+d1fichacatalografica
+d1infoeditora
+d1infoimpressao
+*/
+.d1pagecreditos{
+    border: 1px solid var(--preto);
+    padding: 1em 1.5em;
+}
+.d1nomeautor{
+    margin: 1em 0 0.5em 0;
+}
+.d1cargoresponsavel1{
+    margin: 1.5em 0;
+}
+.d1cargoresponsavel2{
+    margin: 1.5em 0;
+}
+.d1infoeditora{
+    text-align: center;
+    margin: 1.5em 0;
+}
+.d1infoimpressao{
+    text-align: center;
+    margin: 1.5em 0;
+}
+.d1infoimpressao>p:first-child{
+    border: 1px solid var(--preto);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+
+
 /*👉 ==========SUMÁRIO========👈*/
 .p1seciniciaistit1,
 .p1sumariopeso1pv,
