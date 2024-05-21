@@ -173,15 +173,15 @@ a.d2hyperlinkoed:hover {
 }
 
 /* Alinhamento vertical */
-.colTop {
+.coltop {
     align-items: flex-start;
 }
 
-.colCenter {
+.colcenter {
     align-items: center;
 }
 
-.colBottom {
+.colbottom {
     align-items: flex-end;
 }
 
