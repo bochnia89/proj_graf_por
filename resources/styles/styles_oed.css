@@ -114,6 +114,21 @@ strong em {
     font-style: italic;
 }
 
+/*👉d2hyperlinkoed classe específica para aparência de urls en OEDs👈*/
+a.d2hyperlinkoed {
+    color: #053499;
+    font-size: var(--pesoPadrao);
+    text-decoration: underline;
+}
+
+a.d2hyperlinkoed:visited {
+    color: #4f0792;
+}
+
+a.d2hyperlinkoed:hover {
+    color: rgb(134, 0, 0);
+}
+
 .ocultatx, .ocultamn {
     color: transparent;
    }
