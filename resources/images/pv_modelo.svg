@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100.296" height="32.121" viewBox="0 0 100.296 32.121">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_7168" data-name="Caminho 7168" d="M0,0H100.3V-32.121H0Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Retângulo_42" data-name="Retângulo 42" width="79.372" height="20.807" transform="translate(10.462 -25.365)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Caminho_7164" data-name="Caminho 7164" d="M10.462-4.558H89.834V-25.365H10.462Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Retângulo_43" data-name="Retângulo 43" width="100.296" height="32.121" transform="translate(0 -32.121)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="pv_modelo" transform="translate(0 32.121)">
+    <g id="Grupo_7253" data-name="Grupo 7253" clip-path="url(#clip-path)">
+      <g id="Grupo_7246" data-name="Grupo 7246" opacity="0.5">
+        <g id="Grupo_7245" data-name="Grupo 7245">
+          <g id="Grupo_7244" data-name="Grupo 7244" clip-path="url(#clip-path-2)">
+            <g id="Grupo_7243" data-name="Grupo 7243" clip-path="url(#clip-path-3)">
+              <g id="Grupo">
+                <text id="MODE" transform="translate(10.462 -9.621)" fill="#2b2e34" font-size="19" font-family="JoannaSansNova-Bold, Joanna Sans Nova" font-weight="700"><tspan x="0" y="0">MODE</tspan></text>
+                <text id="L" transform="translate(65.94 -9.621)" fill="#2b2e34" font-size="19" font-family="JoannaSansNova-Bold, Joanna Sans Nova" font-weight="700"><tspan x="0" y="0">L</tspan></text>
+                <text id="O" transform="translate(75.059 -9.621)" fill="#2b2e34" font-size="19" font-family="JoannaSansNova-Bold, Joanna Sans Nova" font-weight="700"><tspan x="0" y="0">O</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_7252" data-name="Grupo 7252" opacity="0.5">
+        <g id="Grupo_7251" data-name="Grupo 7251">
+          <g id="Grupo_7250" data-name="Grupo 7250" clip-path="url(#clip-path-4)">
+            <g id="Grupo_7249" data-name="Grupo 7249" clip-path="url(#clip-path)">
+              <g id="Grupo_7247" data-name="Grupo 7247" transform="translate(10.465 -31.986)">
+                <path id="Caminho_7165" data-name="Caminho 7165" d="M0,0A10.343,10.343,0,0,0-10.331,10.331v11.19A10.343,10.343,0,0,0,0,31.852H79.365A10.342,10.342,0,0,0,89.7,21.521V10.331A10.342,10.342,0,0,0,79.365,0Z" fill="none" stroke="#2b2e34" stroke-width="0.269"/>
+              </g>
+              <g id="Grupo_7248" data-name="Grupo 7248" transform="translate(10.465 -30.913)">
+                <path id="Caminho_7166" data-name="Caminho 7166" d="M0,0A9.268,9.268,0,0,0-9.258,9.257V20.448A9.268,9.268,0,0,0,0,29.706H79.365a9.268,9.268,0,0,0,9.258-9.258V9.257A9.268,9.268,0,0,0,79.365,0Z" fill="none" stroke="#2b2e34" stroke-width="0.805"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
