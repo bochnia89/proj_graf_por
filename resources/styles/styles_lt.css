@@ -368,7 +368,7 @@ header .pag {
 }
 
 .alinha {
-    margin: 1em 0 1em 2em;
+    margin-left: 2em !important;
 }
 
 /* Alinhamento vertical de imagens dentro do parágrafo */
@@ -915,7 +915,8 @@ d1infoimpressao
     max-width: 100%;
 }
 
-.sectitatv>.d0anote {
+.sectitatv>.d0anote,
+.d0groupline>.d0anote {
     background: var(--roxo2);
     border-radius: 0em 1.2em 0 0;
     font-family: var(--texto);
@@ -1176,7 +1177,7 @@ o2mapagravata2
 .o0sec3>.p1sec3tit1{
     display: inline-block;
 }
-.p1sec3tit1 + .d0anote{
+.p1sec3tit1+.d0anote{
     display: inline;
   background: var(--roxo2);
   border-radius: 0em 1.2em 0 0;
@@ -1322,7 +1323,6 @@ o2mapagravata2
 */
 .p2referenciasbiblio {
     margin: 1em 0 0.1em 0;
-    word-break: break-all;
 }
 
 .p2referenciasbibliocoment {
@@ -2116,6 +2116,9 @@ blockquote.p3citacaoitem::before {
 
 /*👉==================== TEXTOS PESO: menor ===========================👈*/
 /* Legenda */
+.p4legenda{
+    margin-top:4px ;
+}
 .p4legenda::before {
     background: url(../images/pv_legenda.svg) top left no-repeat;
     background-size: 100%;
@@ -2198,7 +2201,10 @@ p.p4cuidadodicaitem::before{
     font-size: var(--pesoPadrao);
     color: var(--corprof);
     text-align: justify;
-    margin: 0.2em 0;
+    margin: 0.2em 0 0.2em 2em;
+}
+li>.p4resposta{
+    margin: 0.2em 0 0.2em 0;
 }
 
 /*👉TEXTOS SUPORTE👈*/
@@ -2491,6 +2497,18 @@ figure>.p5marcadorcaixa2 {
     font-weight: bold;
 }
 
+.c3idioma, .c3idiomabold, .c3idiomaitalico,
+.c3idiomabolditalico,
+.c3idiomasimuladorhiperlink,
+.c3idiomaresposta,
+.c3idiomaboldresposta,
+.c3idiomaitalicoresposta,
+.c3idiomabolditalicoresposta,
+.c3idiomavocabulariodestaque,
+.c3idiomavocabulariodestaqueitalico{
+    background: var(--vermelho2);
+}
+
 .c3idioma {
     background: var(--vermelho2);
 }
@@ -2531,6 +2549,8 @@ figure>.p5marcadorcaixa2 {
     font-weight: bold;
 }
 
+
+
 .c4ordinal {
     font-family: var(--ordinal);
 }
@@ -2550,6 +2570,9 @@ figure>.p5marcadorcaixa2 {
     font-family: var(--ordinal);
     font-weight: bold;
 }
+.c4textotachado{
+    text-decoration: line-through;
+}
 
 .c4lacuna{}
 
@@ -2562,6 +2585,16 @@ figure>.p5marcadorcaixa2 {
 .c4vocabulariodestaque {
     border-bottom: 2px solid var(--verde1);
     font-weight: bold;
+}
+
+.c3idiomavocabulariodestaque{
+    border-bottom: 2px solid var(--verde1);
+    font-weight: bold;
+}
+.c3idiomavocabulariodestaqueitalico{
+    border-bottom: 2px solid var(--verde1);
+    font-weight: bold;
+    font-style: italic;
 }
 
 dfn sup {
@@ -3202,7 +3235,9 @@ div.o1boxfundoazul1 {
     width: max-content;
     max-width: 100%;
 }
-
+div.o1boxfundoazul1.alinha{
+    width:auto;
+}
 
 p.o1boxfundoazul1 {
     background: var(--azul3);
@@ -3241,6 +3276,11 @@ div.o1boxfundoroxo1 {
     margin: 1em 0;
     width: max-content ;
     max-width: 100% ;
+}
+
+
+div.o1boxfundoroxo1.alinha{
+    width: auto ;
 }
 
 div.o1boxfundoroxo1>p.p5marcador,
