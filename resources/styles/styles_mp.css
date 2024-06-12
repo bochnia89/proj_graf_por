@@ -1020,6 +1020,33 @@ p.p2atvmpletraitembullet{
     margin: 0.5em 0 0.5em 4em;
 }
 
+
+/*👉REFERÊNCIAS BIBLIOGRAFICAS👈*/
+.p2referenciasbibliomp{
+    margin: 1em 0 0.1em 0;
+}
+.p2referenciasbibliompcoment{
+    margin: 0 0 0.5em 0;
+}
+
+ul.p2referenciasbibliompitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1em;
+    text-align: justify;
+}
+p.p2referenciasbibliompitem{
+    margin: 0.5em 0 0.5em 1em;
+    text-align: justify;
+}
+p.p2referenciasbibliompitem::before{
+content: ''; /*content: '•';*/
+font-size: 1.2em;
+width:10px ;
+height:10px ;
+position: absolute;
+margin: 0 0 0 -12px ;
+}
+
 /*👉=========== TEXTOS PESO: INTERMEDIÁRIO ======👈*/
 /* Textos Intermediários */
 .p3intermediariomptit,
@@ -1324,26 +1351,25 @@ margin:0 0 0 -26px ;
 
 /*👉=========== TEXTOS PESO: MENOR ==============👈*/
 /* Legenda */
-.p4legenda {}
+.p4legenda{}
 
 /* Crédito Geral */
-.p4credgeral {}
+.p4credgeral{}
 
 /* Cotas  */
-.p4cota {}
+.p4cota{}
 
 /* Crédito imagem */
-.p4creditoimagem {}
+.p4creditoimagem{}
 
 /* Recado imagem e medida animal */
-.p4recadoimagem {}
+.p4recadoimagem{}
 
 /* Respostas de atividades propostas no Manual */
-.p4respostamp {}
+.p4respostamp{}
 
 /* OED */
-.p4iconeoedmp {}
-
+.p4iconeoedmp{}
 .p4iconeoedmp::before {
     content: '';
     background: url(../images/icone_oed.svg) top left no-repeat;
@@ -1382,7 +1408,7 @@ c0bulletsubitemmp
     font-weight: bold; 
     width: 30px;
     height: 24px;
-    margin: 0 0 0 -30px;
+    margin: 0 0 0 -34px;
     position: absolute;    
     text-align: center;
 }
