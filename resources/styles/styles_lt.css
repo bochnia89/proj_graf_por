@@ -248,8 +248,9 @@ table p {
 
 .p4iconeoed::before {
     content: '';
-    background: url(../images/icone_oed.svg) top left no-repeat;
+    background: url(../images/icone_oed.svg) top left no-repeat #fff;
     background-size: 100%;
+    border-radius: 0.6em;
     width: 35px;
     height: 35px;
     position: absolute;
@@ -328,6 +329,9 @@ header .pag {
     gap: 10px; /* Espaçamento entre os itens */
 }
 
+.semalinha{
+    margin-left: 0 !important;
+}
 
 /*👉CLASSES PARA DIAGRAMAR👈*/
 /* COLUNAS E ALINHAMENTO */
@@ -1184,9 +1188,10 @@ o2mapagravata2
   font-family: var(--texto);
   font-weight: normal;
   font-size: var(--pesoMenor);
-  padding: 0.2em 1em 0.4em 1em;
+  padding: 0.2em 1em 0.3em 1em;
   width: max-content;
   max-width: 100%;
+  margin: -5px 0 0 -4px;
 }
 
 .p1sec3tit2 {}
@@ -4477,7 +4482,7 @@ o5email2
         grid-template-columns: repeat(4, 1fr); /* 6 colunas de tamanho igual */
         gap: 10px; /* Espaçamento entre os itens */
     }
-    
+
     /* E-MAIL MOBILE */
     .infoemail {
         background: var(--verde3);    

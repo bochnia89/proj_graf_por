@@ -13,6 +13,10 @@
   s{
     color: none;
   }
+
+  ul.tem_lista_com_1_item > li{
+    background: #ffa600;
+  }
   #back-to-top{
     position: fixed;
     z-index: 20;
